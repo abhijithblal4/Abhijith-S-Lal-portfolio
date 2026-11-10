@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhijith S Lal &mdash; UI/UX Designer &bull; Designing digital experiences that feel effortless and look unforgettable</title>
+  <meta name="description" content="Portfolio of Abhijith S Lal, a UI/UX Designer from Kerala, India. Designing digital experiences that feel effortless and look unforgettable.">
+  <link rel="icon" type="image/svg+xml" href="assets/sticker-flower.svg">
+
+  <!-- Google Fonts: Pixelify Sans (Retro Pixel), Caveat (Handwritten Doodles), Plus Jakarta Sans (Headings), JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=JetBrains+Mono:wght@600;700;800&family=Pixelify+Sans:wght@600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       NAVIGATION BAR
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="nav-container">
+      
+      <!-- Nav Left: Smiley Button & Nav Tabs -->
+      <div class="nav-left">
+        <!-- Pink Smiley Button -->
+        <button class="smiley-btn" id="smileyBtn" title="Say Hi! (•‿•)" aria-label="Greeting Button">
+          <svg viewBox="0 0 24 24">
+            <circle cx="8.5" cy="9.5" r="1.5" />
+            <circle cx="15.5" cy="9.5" r="1.5" />
+            <path d="M8 14.5C9.5 16.5 14.5 16.5 16 14.5" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="none" />
+          </svg>
+        </button>
+
+        <!-- Navigation Tabs -->
+        <nav>
+          <ul class="nav-links">
+            <li>
+              <a href="#home" class="nav-link active">
+                <span class="icon">★</span>
+                <span>HOME</span>
+              </a>
+            </li>
+            <li>
+              <a href="#about" class="nav-link">
+                <span class="icon">👤</span>
+                <span>ABOUT</span>
+              </a>
+            </li>
+            <li>
+              <a href="#case-study" class="nav-link">
+                <span class="icon">⊞</span>
+                <span>CASE STUDY</span>
+              </a>
+            </li>
+            <li>
+              <a href="#playground" class="nav-link">
+                <span class="icon">✦</span>
+                <span>PLAYGROUND</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Nav Right: Social Icons & Contact Pill -->
+      <div class="nav-right">
+        <!-- LinkedIn (Yellow Circle) -->
+        <a href="https://www.linkedin.com/in/abhijith-s-lal-/" target="_blank" rel="noopener noreferrer" class="social-circle social-linkedin" title="LinkedIn Profile" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24">
+            <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.39 9.74v-8.37H5.07v8.37h2.78z" />
+          </svg>
+        </a>
+
+        <!-- Behance (Blue Circle) -->
+        <a href="https://www.behance.net/abhijithslal36" target="_blank" rel="noopener noreferrer" class="social-circle social-behance" title="Behance Portfolio" aria-label="Behance">
+          <svg viewBox="0 0 24 24">
+            <path d="M6.915 4.5H0v15h7.32c3.42 0 5.48-1.82 5.48-4.75 0-1.95-1.05-3.5-2.82-4.11 1.4-.71 2.2-2.02 2.2-3.66 0-2.76-2.19-4.21-5.43-4.21h.165zm-4.32 2.67h3.81c1.59 0 2.56.73 2.56 2.16 0 1.49-1.05 2.32-2.65 2.32H2.595V7.17zm0 6.96h4.15c1.76 0 2.84.84 2.84 2.73 0 1.99-1.22 2.84-3.02 2.84H2.595v-5.57zm14.28-7.13h-6.2v2.32h6.2V7zm2.59 4.3c-3.79 0-6.52 2.73-6.52 6.55 0 3.92 2.88 6.55 6.78 6.55 3.32 0 5.37-1.88 5.86-4.44h-2.56c-.35 1.32-1.63 2.12-3.23 2.12-2.08 0-3.72-1.35-3.92-3.53h9.85c.06-.41.09-.76.09-1.19 0-3.69-2.56-6.06-6.35-6.06zm-3.6 5.05c.26-1.88 1.63-2.93 3.53-2.93 1.76 0 3.09 1.05 3.35 2.93h-6.88z" />
+          </svg>
+        </a>
+
+        <!-- Instagram (Pink Circle) -->
+        <a href="https://www.instagram.com/htij_ihba_lal?rpxt=MWkzYjczMTJndG9uag==" target="_blank" rel="noopener noreferrer" class="social-circle social-instagram" title="Instagram Profile" aria-label="Instagram">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" />
+          </svg>
+        </a>
+
+        <!-- WhatsApp (Green Circle) -->
+        <a href="https://wa.me/918078380042" target="_blank" rel="noopener noreferrer" class="social-circle social-whatsapp" title="Chat on WhatsApp" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24">
+            <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24h-.18zm-3.56 3.63c-.2 0-.43.08-.66.33-.23.25-.87.85-.87 2.07s.89 2.4 1.02 2.57c.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.53.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.2-.58.2-1.07.14-1.18-.06-.1-.23-.17-.48-.29-.26-.13-1.47-.73-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.65.81-.8 1-.14.16-.29.18-.54.06-.26-.13-1.08-.4-2.06-1.27-.76-.68-1.28-1.52-1.43-1.77-.14-.26-.02-.39.11-.52.11-.11.26-.29.39-.44.13-.15.17-.25.26-.42.08-.17.04-.32-.02-.45s-.56-1.35-.77-1.85c-.2-.48-.41-.42-.56-.42h-.32z"/>
+          </svg>
+        </a>
+
+        <!-- Contact CTA Button -->
+        <a href="#contact" class="nav-contact-btn">
+          <span class="heart-icon">♥</span>
+          <span>CONTACT</span>
+        </a>
+
+        <!-- Mobile Nav Toggle Hamburger -->
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu">
+          <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       HERO SECTION (EXACT MATCH TO REFERENCE SCREENSHOT)
+       ========================================================================= -->
+  <section class="hero-section" id="home">
+    <div class="hero-wrapper">
+
+      <!-- Top Row: "MADE THINGS" Pill + "my name is" + "PIXEL PERFECT" Pill -->
+      <div class="hero-top-annotation">
+        <div class="pill-badge pill-made-things">MADE THINGS</div>
+        
+        <div class="my-name-is-group">
+          <span class="my-name-is-text">my name is</span>
+          <img src="assets/hand-underline.svg" class="hand-drawn-underline" alt="" aria-hidden="true">
+        </div>
+
+        <div class="pill-badge pill-sweat-details">PIXEL PERFECT</div>
+      </div>
+
+      <!-- ABHIJITH S LAL Sketch Box & Sticky Annotations -->
+      <div class="robin-box-container">
+        
+        <!-- Left Yellow Sticky Note: "UI/UX Designer" + Arrow pointing up-right -->
+        <div class="sticky-annotation-left">
+          <img src="assets/arrow-left.svg" class="doodle-arrow-left" alt="" aria-hidden="true">
+          <div class="tape-note-yellow" id="heroRoleNote">UI/UX Designer</div>
+        </div>
+
+        <!-- Central Hand-drawn Marker Box with Pixel "ABHIJITH S LAL" -->
+        <div class="robin-sketch-box">
+          <img src="assets/sketch-box.svg" class="sketch-box-svg" alt="" aria-hidden="true">
+          <h1 class="robin-pixel-text" id="heroNameText">ABHIJITH S LAL</h1>
+        </div>
+
+        <!-- Right Mint Sticky Note: "Kerala, India" + Arrow pointing up-left -->
+        <div class="sticky-annotation-right">
+          <img src="assets/arrow-right.svg" class="doodle-arrow-right" alt="" aria-hidden="true">
+          <div class="tape-note-green" id="heroLocationNote">Kerala, India</div>
+        </div>
+
+      </div>
+
+      <!-- Status Line: Blue Pulsing Dot + Uppercase Status -->
+      <div class="hero-status-line">
+        <span class="status-dot-blue"></span>
+        <span class="status-text" id="heroStatusText">OPEN TO NEW WORK AND GOOD PROBLEMS</span>
+      </div>
+
+      <!-- Main Punchy Statement: Headline with Target & Flower Stickers & Flanking Avatars -->
+      <div class="hero-headline-container">
+        
+        <!-- Floating Left Avatar -->
+        <div class="floating-avatar floating-avatar-left" title="Abhijith S Lal 🌴">
+          <img src="assets/abhijith-photo.jpg" alt="Abhijith S Lal">
+        </div>
+
+        <h2 class="hero-headline">
+          <div class="headline-line">
+            <span id="headlineLine1Text">Designing digital experiences that</span>
+            <img src="assets/sticker-target.svg" class="hero-sticker target-sticker" alt="Green target sticker" title="Bullseye!">
+          </div>
+          <div class="headline-line">
+            <span id="headlineLine2Text">feel effortless and look unforgettable.</span>
+            <img src="assets/sticker-flower.svg" class="hero-sticker flower-sticker" alt="Pink flower sticker" title="Delight!">
+          </div>
+        </h2>
+
+        <!-- Floating Right Avatar -->
+        <div class="floating-avatar floating-avatar-right" title="Abhijith S Lal ✨">
+          <img src="assets/abhijith-adiyogi.jpg" alt="Abhijith S Lal at Adiyogi">
+        </div>
+
+      </div>
+
+      <!-- Black Contact Me Button with Blue Arrow Square -->
+      <a href="#contact" class="hero-cta-btn">
+        <span class="cta-icon-square">
+          <svg viewBox="0 0 24 24">
+            <path d="M7 17L17 7M17 7H7M17 7V17" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="cta-text">CONTACT ME</span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       CASE STUDIES SECTION
+       ========================================================================= -->
+  <section class="section-wrapper" id="case-study">
+    <div class="container">
+      
+      <div class="section-header-badge">
+        <span class="tape-title">FEATURED WORK 📂</span>
+        <h2 class="section-main-title">My Projects</h2>
+        <p class="section-subtitle">Selected UI/UX and product design case studies crafted with care, clarity, and precision.</p>
+      </div>
+
+      <!-- Featured Project Cards -->
+      <div class="projects-grid">
+        
+        <!-- Project 1: Pixel Brew (Featured First Project) -->
+        <article class="project-card" data-category="product visual" data-project="pixelbrew">
+          <div class="washi-tape-corner washi-yellow">☕ Featured App</div>
+          <div class="project-preview-frame">
+            <img src="assets/pixel-brew-thumb.jpg" alt="Pixel Brew Coffee Ordering App UI Mockup">
+          </div>
+          <div class="project-meta-row">
+            <div class="project-tags">
+              <span class="tag-badge">UI/UX Design</span>
+              <span class="tag-badge">Mobile App</span>
+              <span class="tag-badge">Figma Prototype</span>
+            </div>
+            <span class="project-year">2026</span>
+          </div>
+          <h3 class="project-title">Pixel Brew</h3>
+          <p class="project-desc">Pixel Brew solves common coffee ordering problems by providing simple navigation, easy customization, a smooth checkout process, and convenient order tracking.</p>
+          <div class="project-footer-row">
+            <a href="https://www.figma.com/design/MLsNziMThRIg9sqso4pZzX/PIXEL-BREW?node-id=0-1&t=7HrbEVzLGbISiwXO-1" target="_blank" rel="noopener noreferrer" class="project-impact-stat" style="text-decoration: none; color: #EA580C; font-weight: 800;" onclick="event.stopPropagation();">
+              🎨 Live Figma ↗
+            </a>
+            <span class="project-link-action">Inspect Case Study ↗</span>
+          </div>
+        </article>
+
+        <!-- Project 2: NestPay -->
+        <article class="project-card" data-category="product mobile" data-project="nestpay">
+          <div class="washi-tape-corner washi-mint">💳 Fintech App</div>
+          <div class="project-preview-frame">
+            <img src="assets/nestpay-thumb.jpg" alt="NestPay Budget & Savings App Mockup" style="object-fit:cover;width:100%;height:100%;border-radius:8px;">
+          </div>
+          <div class="project-meta-row">
+            <div class="project-tags">
+              <span class="tag-badge">Fintech UX</span>
+              <span class="tag-badge">Mobile App</span>
+              <span class="tag-badge">Figma Prototype</span>
+            </div>
+            <span class="project-year">2026</span>
+          </div>
+          <h3 class="project-title">NestPay</h3>
+          <p class="project-desc">NestPay is a fintech app that helps users track budgets and savings effortlessly with a clean, intuitive dashboard and smart spending insights.</p>
+          <div class="project-footer-row">
+            <span class="project-impact-stat">💰 Budget Tracker</span>
+            <span class="project-link-action">Inspect Case Study ↗</span>
+          </div>
+        </article>
+
+        <!-- Project 3: Trekly -->
+        <article class="project-card" data-category="web travel" data-project="trekly">
+          <div class="washi-tape-corner washi-mint">🌿 Travel Web</div>
+          <div class="project-preview-frame">
+            <img src="assets/trekly-thumb.jpg" alt="Trekly Kerala Travel Website" style="object-fit:cover;width:100%;height:100%;border-radius:8px;">
+          </div>
+          <div class="project-meta-row">
+            <div class="project-tags">
+              <span class="tag-badge">Web Design</span>
+              <span class="tag-badge">Travel UX</span>
+              <span class="tag-badge">Kerala</span>
+            </div>
+            <span class="project-year">2026</span>
+          </div>
+          <h3 class="project-title">Trekly</h3>
+          <p class="project-desc">Trekly is a Kerala travel website that takes visitors deep into local traditions, hidden villages, waterways, and low-budget authentic experiences.</p>
+          <div class="project-footer-row">
+            <span class="project-impact-stat">🌴 Kerala Heritage</span>
+            <span class="project-link-action">Inspect Case Study ↗</span>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       ABOUT SECTION
+       ========================================================================= -->
+  <section class="section-wrapper" id="about">
+    <div class="container">
+      
+      <div class="section-header-badge">
+        <span class="tape-title">GET TO KNOW ME 🌴</span>
+        <h2 class="section-main-title">A Bit About Me</h2>
+        <p class="section-subtitle">Passionate about thoughtful interfaces, user needs, and effortless digital craft.</p>
+      </div>
+
+      <div class="about-grid">
+        
+        <!-- Left: Polaroid Frame & Kerala Widget -->
+        <div class="about-left-col">
+          
+          <div class="polaroid-frame">
+            <div class="polaroid-washi"></div>
+            <div class="polaroid-photo">
+              <img src="assets/abhijith-photo.jpg" alt="Abhijith S Lal">
+            </div>
+            <div class="polaroid-caption">Abhijith S Lal • Kerala, India 🌴</div>
+          </div>
+
+          <!-- Kerala Time Widget -->
+          <div class="chicago-widget-card">
+            <div class="chicago-time-header">
+              <span style="font-size: 13px; font-weight: 800; text-transform: uppercase; color: #64748B;">Kerala, India (HQ)</span>
+              <span class="chicago-status-pill">Active Now</span>
+            </div>
+            <div class="chicago-clock" id="chicagoClock">--:--:-- --</div>
+            <p style="font-size: 13px; color: #555; margin-top: 6px;">Indian Standard Time (IST) • Designing intuitive interfaces & digital experiences ✨</p>
+          </div>
+
+        </div>
+
+        <!-- Right: Story, Principles, Tools & Skills -->
+        <div class="about-right-col">
+          
+          <p class="about-bio-text">
+            I’m a <strong>UI/UX designer</strong> who turns ideas into clear, intuitive digital experiences. I focus on thoughtful interfaces, user needs, and the small details that make products feel effortless to use.
+          </p>
+
+          <!-- 3 Design Principles Sticky Cards -->
+          <div class="principles-row">
+            <div class="principle-sticky" style="background-color: var(--yellow-sticky);">
+              <div class="principle-title">1. User First</div>
+              <p class="principle-desc">Understanding real user needs and removing friction before it ever reaches the screen.</p>
+            </div>
+            <div class="principle-sticky" style="background-color: var(--mint-sticky);">
+              <div class="principle-title">2. Effortless UI</div>
+              <p class="principle-desc">Clean visual hierarchy, intuitive mental models, and software that gets out of your way.</p>
+            </div>
+            <div class="principle-sticky" style="background-color: var(--sand-pill);">
+              <div class="principle-title">3. Craft & Detail</div>
+              <p class="principle-desc">Sweating the typography, alignment, and subtle micro-interactions that spark joy.</p>
+            </div>
+          </div>
+
+          <!-- Tools Section -->
+          <h4 class="skills-wall-title" style="margin-top: 24px;">Tools & Software</h4>
+          <div class="tools-wall" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 24px;">
+            <button class="skill-sticker" onclick="showToast('Figma: UI/UX design, wireframing & design systems'); playPop();">🎨 Figma</button>
+            <button class="skill-sticker" onclick="showToast('Adobe Photoshop: Digital design, assets & raster editing'); playPop();">🖌️ Adobe Photoshop</button>
+            <button class="skill-sticker" onclick="showToast('Adobe Illustrator: Vector graphics, icons & branding'); playPop();">📐 Adobe Illustrator</button>
+            <button class="skill-sticker" onclick="showToast('Adobe XD: Interactive prototypes & layout design'); playPop();">💎 Adobe XD</button>
+          </div>
+
+          <!-- Skills Section -->
+          <h4 class="skills-wall-title">Skills & Specializations</h4>
+          <div class="skills-wall">
+            <button class="skill-sticker" onclick="showToast('Prototyping: Interactive wireframes & flow animations'); playPop();">⚡ Prototyping</button>
+            <button class="skill-sticker" onclick="showToast('Visual Designing: Aesthetics, typography & color hierarchy'); playPop();">🎨 Visual Designing</button>
+            <button class="skill-sticker" onclick="showToast('UX Design: User research, wireframing & journey mapping'); playPop();">🧠 UX Design</button>
+            <button class="skill-sticker" onclick="showToast('HTML: Semantic markup & accessible structure'); playPop();">🌐 HTML</button>
+            <button class="skill-sticker" onclick="showToast('CSS: Modern styling, flexbox/grid & animations'); playPop();">💅 CSS</button>
+            <button class="skill-sticker" onclick="showToast('JavaScript: Interactive UI logic & DOM manipulation'); playPop();">⚡ JavaScript</button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       PLAYGROUND SECTION (INTERACTIVE TOYS)
+       ========================================================================= -->
+  <section class="section-wrapper" id="playground">
+    <div class="container">
+      
+      <div class="section-header-badge">
+        <span class="tape-title">CREATIVE LAB 🧪</span>
+        <h2 class="section-main-title">The Interactive Sandbox</h2>
+        <p class="section-subtitle">A place to play with tactile digital toys, pixel grids, and stickers.</p>
+      </div>
+
+      <div class="playground-grid">
+        
+        <!-- Toy 1: Interactive Sticker Board -->
+        <div class="toy-card">
+          <div class="toy-header">
+            <h3 class="toy-title">
+              <span>📌 Sticker Board</span>
+            </h3>
+            <span class="toy-badge">Drag & Drop</span>
+          </div>
+
+          <div class="sticker-board-area" id="stickerBoard">
+            <div class="sticker-board-hint">Click a sticker below to stamp it here! ✨</div>
+          </div>
+
+          <div class="sticker-palette-tray">
+            <button class="tray-sticker" data-emoji="🌸" title="Flower Sticker">🌸</button>
+            <button class="tray-sticker" data-emoji="🎯" title="Bullseye Sticker">🎯</button>
+            <button class="tray-sticker" data-emoji="☕" title="Coffee Mug">☕</button>
+            <button class="tray-sticker" data-emoji="⚡" title="Lightning Bolt">⚡</button>
+            <button class="tray-sticker" data-emoji="❤️" title="Pixel Heart">❤️</button>
+            <button class="tray-sticker" data-emoji="⭐" title="Chicago Star">⭐</button>
+          </div>
+
+          <div class="toy-actions" style="margin-top: 14px;">
+            <button class="btn-secondary" id="clearBoardBtn">Clear Board</button>
+          </div>
+        </div>
+
+        <!-- Toy 2: 12x12 Retro Pixel Art Studio -->
+        <div class="toy-card">
+          <div class="toy-header">
+            <h3 class="toy-title">
+              <span>👾 12×12 Pixel Studio</span>
+            </h3>
+            <span class="toy-badge">Exportable</span>
+          </div>
+
+          <div class="pixel-canvas-wrapper">
+            <div class="pixel-grid" id="pixelGrid"></div>
+
+            <!-- Color Palette -->
+            <div class="palette-swatches">
+              <button class="color-swatch active" style="background-color: #111111;" data-color="#111111" title="Retro Black"></button>
+              <button class="color-swatch" style="background-color: #EB5A3C;" data-color="#EB5A3C" title="Robin Coral"></button>
+              <button class="color-swatch" style="background-color: #FFCE38;" data-color="#FFCE38" title="Sun Yellow"></button>
+              <button class="color-swatch" style="background-color: #0D825C;" data-color="#0D825C" title="Emerald Mint"></button>
+              <button class="color-swatch" style="background-color: #FF4F81;" data-color="#FF4F81" title="Bubblegum Pink"></button>
+              <button class="color-swatch" style="background-color: #3B82F6;" data-color="#3B82F6" title="Vibrant Blue"></button>
+              <button class="color-swatch" style="background-color: #FFFFFF;" data-color="#FFFFFF" title="Eraser (White)"></button>
+            </div>
+          </div>
+
+          <div class="toy-actions">
+            <button class="btn-secondary" id="clearPixelBtn">Clear Grid</button>
+            <button class="btn-secondary" id="savePixelBtn" style="background-color: #111; color: #FFF;">Download PNG 📥</button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       CONTACT SECTION
+       ========================================================================= -->
+  <section class="section-wrapper" id="contact">
+    <div class="container">
+      
+      <div class="section-header-badge">
+        <span class="tape-title">LET’S BUILD TOGETHER 📬</span>
+        <h2 class="section-main-title">Get in Touch</h2>
+        <p class="section-subtitle">Open to staff product design roles, advisory, and ambitious freelance challenges.</p>
+      </div>
+
+      <div class="contact-card-wrapper">
+        <div class="contact-card-tape">MEMO / INQUIRY</div>
+
+        <form id="contactForm">
+          <div class="contact-form-grid">
+            <div class="form-group">
+              <label class="form-label" for="contactName">Your Name</label>
+              <input type="text" id="contactName" class="form-input" placeholder="e.g. Alex Chen" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contactEmail">Your Email</label>
+              <input type="email" id="contactEmail" class="form-input" placeholder="alex@company.com" required>
+            </div>
+
+            <div class="form-group form-full">
+              <label class="form-label" for="contactSubject">What are you looking to create?</label>
+              <input type="text" id="contactSubject" class="form-input" placeholder="e.g. New design system rollout, mobile app overhaul..." required>
+            </div>
+
+            <div class="form-group form-full">
+              <label class="form-label" for="contactMessage">Project Details & Timeline</label>
+              <textarea id="contactMessage" class="form-textarea" placeholder="Tell Abhijith about the problem you are solving, target timeline, and team size..."></textarea>
+            </div>
+          </div>
+
+          <div class="contact-action-row">
+            <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+              <button type="button" class="btn-copy-email" id="copyEmailBtn" title="Copy abhijithblal4@gmail.com">
+                <span>📋</span>
+                <span>Copy Direct Email</span>
+              </button>
+
+              <a href="https://wa.me/918078380042" target="_blank" rel="noopener noreferrer" class="btn-whatsapp-direct" title="Chat directly on WhatsApp (+91 8078380042)">
+                <span>💬</span>
+                <span>WhatsApp: +91 8078380042</span>
+              </a>
+            </div>
+
+            <button type="submit" class="btn-submit-contact" title="Direct message to Abhijith's WhatsApp">
+              <span>Send via WhatsApp 💬</span>
+              <span>↗</span>
+            </button>
+          </div>
+        </form>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div style="display: flex; justify-content: center; gap: 12px; margin-bottom: 20px;">
+        <a href="https://www.linkedin.com/in/abhijith-s-lal-/" target="_blank" rel="noopener noreferrer" class="social-circle social-linkedin" title="LinkedIn Profile" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.39 9.74v-8.37H5.07v8.37h2.78z"/></svg>
+        </a>
+        <a href="https://www.behance.net/abhijithslal36" target="_blank" rel="noopener noreferrer" class="social-circle social-behance" title="Behance Portfolio" aria-label="Behance">
+          <svg viewBox="0 0 24 24"><path d="M6.915 4.5H0v15h7.32c3.42 0 5.48-1.82 5.48-4.75 0-1.95-1.05-3.5-2.82-4.11 1.4-.71 2.2-2.02 2.2-3.66 0-2.76-2.19-4.21-5.43-4.21h.165zm-4.32 2.67h3.81c1.59 0 2.56.73 2.56 2.16 0 1.49-1.05 2.32-2.65 2.32H2.595V7.17zm0 6.96h4.15c1.76 0 2.84.84 2.84 2.73 0 1.99-1.22 2.84-3.02 2.84H2.595v-5.57zm14.28-7.13h-6.2v2.32h6.2V7zm2.59 4.3c-3.79 0-6.52 2.73-6.52 6.55 0 3.92 2.88 6.55 6.78 6.55 3.32 0 5.37-1.88 5.86-4.44h-2.56c-.35 1.32-1.63 2.12-3.23 2.12-2.08 0-3.72-1.35-3.92-3.53h9.85c.06-.41.09-.76.09-1.19 0-3.69-2.56-6.06-6.35-6.06zm-3.6 5.05c.26-1.88 1.63-2.93 3.53-2.93 1.76 0 3.09 1.05 3.35 2.93h-6.88z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/htij_ihba_lal?rpxt=MWkzYjczMTJndG9uag==" target="_blank" rel="noopener noreferrer" class="social-circle social-instagram" title="Instagram Profile" aria-label="Instagram">
+          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+        </a>
+        <a href="https://wa.me/918078380042" target="_blank" rel="noopener noreferrer" class="social-circle social-whatsapp" title="WhatsApp Message" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24h-.18zm-3.56 3.63c-.2 0-.43.08-.66.33-.23.25-.87.85-.87 2.07s.89 2.4 1.02 2.57c.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.53.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.2-.58.2-1.07.14-1.18-.06-.1-.23-.17-.48-.29-.26-.13-1.47-.73-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.65.81-.8 1-.14.16-.29.18-.54.06-.26-.13-1.08-.4-2.06-1.27-.76-.68-1.28-1.52-1.43-1.77-.14-.26-.02-.39.11-.52.11-.11.26-.29.39-.44.13-.15.17-.25.26-.42.08-.17.04-.32-.02-.45s-.56-1.35-.77-1.85c-.2-.48-.41-.42-.56-.42h-.32z"/></svg>
+        </a>
+      </div>
+      <div class="footer-doodle">Designed & hand-crafted with purpose &bull; Kerala, India 🌴</div>
+      <div class="footer-copyright">&copy; 2026 Abhijith S Lal. Designing digital experiences that feel effortless and look unforgettable.</div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       CASE STUDY DETAIL MODAL
+       ========================================================================= -->
+  <div class="modal-overlay" id="caseStudyModal">
+    <div class="modal-content-box">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">✕</button>
+      <div id="modalBody">
+        <!-- Injected via JavaScript on card click -->
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       TOAST NOTIFICATION COMPONENT
+       ========================================================================= -->
+  <div class="toast-notification" id="toastNotification">
+    Notification message here
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

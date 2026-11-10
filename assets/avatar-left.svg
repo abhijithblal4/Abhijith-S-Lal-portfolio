@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <clipPath id="circleClipLeft">
+      <circle cx="60" cy="60" r="54" />
+    </clipPath>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#76B5C5" />
+      <stop offset="60%" stop-color="#A4D4DE" />
+      <stop offset="100%" stop-color="#CBE8EE" />
+    </linearGradient>
+    <linearGradient id="jacketGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E3A5F" />
+      <stop offset="100%" stop-color="#0F2137" />
+    </linearGradient>
+  </defs>
+
+  <!-- Orange/Coral Outer Ring -->
+  <circle cx="60" cy="60" r="58" stroke="#F15A38" stroke-width="4.5" fill="#FAF9F5" />
+
+  <!-- Clipped Portrait Scene -->
+  <g clip-path="url(#circleClipLeft)">
+    <!-- Scenic Alpine Background -->
+    <rect width="120" height="120" fill="url(#skyGrad)" />
+    
+    <!-- Distant Mountains -->
+    <polygon points="10,65 35,42 60,68 85,38 115,70 120,120 0,120" fill="#4A7A8C" />
+    <polygon points="35,42 42,48 30,52" fill="#E8F1F5" opacity="0.8" />
+    <polygon points="85,38 92,45 80,49" fill="#E8F1F5" opacity="0.8" />
+    
+    <!-- Alpine Lake -->
+    <ellipse cx="60" cy="80" rx="65" ry="16" fill="#3D92A6" />
+    
+    <!-- Pine Trees Silhouette -->
+    <polygon points="12,74 16,62 20,74" fill="#1C4540" />
+    <polygon points="18,76 22,64 26,76" fill="#183E39" />
+    <polygon points="95,75 100,60 105,75" fill="#1C4540" />
+
+    <!-- Person / Robin -->
+    <!-- Shoulders / Jacket -->
+    <path d="M 22 120 C 22 92, 40 85, 60 85 C 80 85, 98 92, 98 120 Z" fill="url(#jacketGrad)" />
+    <!-- Orange inner fleece/collar accent matching screenshot -->
+    <path d="M 52 86 L 60 102 L 68 86 Z" fill="#E85D36" />
+    <!-- Zipper line -->
+    <line x1="60" y1="102" x2="60" y2="120" stroke="#CBD5E1" stroke-width="2" />
+
+    <!-- Neck -->
+    <rect x="52" y="74" width="16" height="14" rx="4" fill="#E8B298" />
+
+    <!-- Head / Face -->
+    <ellipse cx="60" cy="60" rx="16" ry="19" fill="#F3C3AB" />
+
+    <!-- Hair -->
+    <path d="M 44 58 C 43 45, 52 40, 60 40 C 69 40, 77 45, 76 58 C 76 52, 73 45, 60 45 C 48 45, 45 52, 44 58 Z" fill="#3E2723" />
+    <!-- Side hair / texture -->
+    <path d="M 43 54 C 42 43, 50 38, 62 38 C 75 38, 77 46, 77 56 C 74 48, 70 44, 60 44 C 50 44, 46 49, 43 54 Z" fill="#4E342E" />
+
+    <!-- Eyes (smiling) -->
+    <path d="M 51 59 Q 55 56 57 59" stroke="#3E2723" stroke-width="2" stroke-linecap="round" fill="none" />
+    <path d="M 63 59 Q 65 56 69 59" stroke="#3E2723" stroke-width="2" stroke-linecap="round" fill="none" />
+
+    <!-- Eyebrows -->
+    <path d="M 50 54 Q 54 52 57 54" stroke="#4E342E" stroke-width="1.6" stroke-linecap="round" fill="none" />
+    <path d="M 63 54 Q 66 52 70 54" stroke="#4E342E" stroke-width="1.6" stroke-linecap="round" fill="none" />
+
+    <!-- Friendly Smile -->
+    <path d="M 54 69 Q 60 75 66 69" stroke="#9E4D3E" stroke-width="2" stroke-linecap="round" fill="none" />
+    
+    <!-- Cheeks glow -->
+    <circle cx="51" cy="65" r="3" fill="#E88374" opacity="0.4" />
+    <circle cx="69" cy="65" r="3" fill="#E88374" opacity="0.4" />
+  </g>
+</svg>

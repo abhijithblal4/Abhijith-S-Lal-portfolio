@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" fill="none">
+  <!-- Linear Mobile Redesign Preview -->
+  <rect width="600" height="380" rx="16" fill="#121316" />
+  
+  <!-- Subtle Grid Pattern in background -->
+  <defs>
+    <pattern id="cardGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#22252B" stroke-width="0.8" />
+    </pattern>
+    <linearGradient id="glowLinear" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5E6AD2" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#121316" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="380" rx="16" fill="url(#cardGrid)" />
+  <rect width="600" height="380" rx="16" fill="url(#glowLinear)" />
+
+  <!-- Mobile Device Mockup Frame -->
+  <rect x="180" y="24" width="240" height="340" rx="28" fill="#1A1C23" stroke="#2E3342" stroke-width="3" />
+  <!-- Dynamic Island -->
+  <rect x="260" y="36" width="80" height="18" rx="9" fill="#0D0E11" />
+
+  <!-- App Header -->
+  <rect x="200" y="70" width="100" height="12" rx="4" fill="#E2E8F0" />
+  <circle cx="395" cy="76" r="10" fill="#5E6AD2" />
+
+  <!-- Filter Pills -->
+  <rect x="200" y="94" width="46" height="18" rx="9" fill="#5E6AD2" fill-opacity="0.2" stroke="#5E6AD2" stroke-width="1" />
+  <text x="210" y="106" fill="#8B95F6" font-size="9" font-family="sans-serif" font-weight="bold">Active</text>
+  <rect x="252" y="94" width="46" height="18" rx="9" fill="#242834" />
+  <rect x="304" y="94" width="46" height="18" rx="9" fill="#242834" />
+
+  <!-- Issue Card 1 -->
+  <rect x="196" y="124" width="208" height="64" rx="10" fill="#222632" stroke="#2F3547" stroke-width="1" />
+  <circle cx="212" cy="142" r="5" fill="#EAB308" />
+  <rect x="224" y="137" width="110" height="10" rx="3" fill="#F1F5F9" />
+  <rect x="224" y="153" width="160" height="7" rx="3" fill="#64748B" />
+  <rect x="224" y="167" width="42" height="14" rx="4" fill="#312E81" />
+  <text x="230" y="177" fill="#A5B4FC" font-size="8" font-family="sans-serif">LIN-402</text>
+
+  <!-- Issue Card 2 -->
+  <rect x="196" y="196" width="208" height="64" rx="10" fill="#222632" stroke="#2F3547" stroke-width="1" />
+  <circle cx="212" cy="214" r="5" fill="#EF4444" />
+  <rect x="224" y="209" width="130" height="10" rx="3" fill="#F1F5F9" />
+  <rect x="224" y="225" width="140" height="7" rx="3" fill="#64748B" />
+  <rect x="224" y="239" width="42" height="14" rx="4" fill="#7F1D1D" />
+  <text x="230" y="249" fill="#FCA5A5" font-size="8" font-family="sans-serif">LIN-405</text>
+
+  <!-- Issue Card 3 -->
+  <rect x="196" y="268" width="208" height="64" rx="10" fill="#222632" stroke="#2F3547" stroke-width="1" />
+  <circle cx="212" cy="286" r="5" fill="#10B981" />
+  <rect x="224" y="281" width="90" height="10" rx="3" fill="#F1F5F9" />
+  <rect x="224" y="297" width="150" height="7" rx="3" fill="#64748B" />
+
+  <!-- Floating Stats Badge Left -->
+  <g transform="translate(30, 110)">
+    <rect width="130" height="60" rx="8" fill="#1E212B" stroke="#373D4E" stroke-width="1" />
+    <text x="14" y="26" fill="#94A3B8" font-size="10" font-family="sans-serif">Triage Speed</text>
+    <text x="14" y="48" fill="#10B981" font-size="18" font-family="sans-serif" font-weight="bold">+38% Faster</text>
+  </g>
+
+  <!-- Floating Gesture Hint Right -->
+  <g transform="translate(435, 180)">
+    <rect width="135" height="65" rx="8" fill="#1E212B" stroke="#373D4E" stroke-width="1" />
+    <text x="14" y="26" fill="#94A3B8" font-size="10" font-family="sans-serif">Swipe Actions</text>
+    <text x="14" y="48" fill="#F8FAFC" font-size="14" font-family="sans-serif" font-weight="bold">1-Handed Flow</text>
+  </g>
+</svg>

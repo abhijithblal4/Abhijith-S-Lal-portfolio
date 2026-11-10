@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 200" preserveAspectRatio="none" fill="none">
+  <!-- Hand-drawn organic sketchy marker box with slight wobble -->
+  <path d="M 22 14 
+           C 140 10, 390 8, 496 12 
+           C 509 13, 512 24, 511 45 
+           C 509 100, 513 160, 508 182 
+           C 506 193, 494 195, 472 196 
+           C 360 198, 170 198, 28 196 
+           C 14 195, 10 184, 11 162 
+           C 13 115, 9 55, 14 26 
+           C 15 16, 18 14, 28 13 Z" 
+        stroke="#EB5A3C" 
+        stroke-width="3" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"
+        fill="none" />
+  <!-- Subtle second pass for natural hand-sketched marker texture -->
+  <path d="M 26 18 
+           C 160 14, 370 12, 492 16 
+           C 506 17, 507 28, 507 55 
+           C 506 105, 509 155, 504 180 
+           C 502 190, 488 193, 460 194 
+           C 340 195, 180 196, 34 192 
+           C 18 191, 15 180, 16 160 
+           C 17 105, 14 50, 18 22" 
+        stroke="#EB5A3C" 
+        stroke-width="1.8" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"
+        stroke-opacity="0.85"
+        fill="none" />
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- 5 Rounded petals in vibrant pink -->
+  <g fill="#FF4F81">
+    <!-- Top petal -->
+    <circle cx="32" cy="18" r="11" />
+    <!-- Top right petal -->
+    <circle cx="45" cy="27" r="11" />
+    <!-- Bottom right petal -->
+    <circle cx="40" cy="42" r="11" />
+    <!-- Bottom left petal -->
+    <circle cx="24" cy="42" r="11" />
+    <!-- Top left petal -->
+    <circle cx="19" cy="27" r="11" />
+  </g>
+  <!-- Center dark circle -->
+  <circle cx="32" cy="32" r="6.5" fill="#1A1A1A" />
+  <!-- Center subtle highlight -->
+  <circle cx="30" cy="30" r="1.8" fill="#FFFFFF" fill-opacity="0.6" />
+</svg>

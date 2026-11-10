@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 88" fill="#111111">
+  <!-- Crisp 8-bit Pixel Lettering for "ROBIN" -->
+  <!-- 'R' -->
+  <g id="letter-R">
+    <!-- Left vertical stem -->
+    <rect x="0" y="0" width="16" height="88" />
+    <!-- Top horizontal bar -->
+    <rect x="16" y="0" width="32" height="16" />
+    <!-- Top-right corner step -->
+    <rect x="48" y="12" width="12" height="24" />
+    <!-- Middle crossbar -->
+    <rect x="16" y="36" width="32" height="14" />
+    <!-- Diagonal leg (stepped pixels) -->
+    <rect x="28" y="50" width="14" height="12" />
+    <rect x="38" y="62" width="14" height="12" />
+    <rect x="48" y="74" width="14" height="14" />
+  </g>
+
+  <!-- 'O' -->
+  <g id="letter-O" transform="translate(70, 0)">
+    <!-- Left stem -->
+    <rect x="0" y="14" width="16" height="60" />
+    <!-- Right stem -->
+    <rect x="44" y="14" width="16" height="60" />
+    <!-- Top bar -->
+    <rect x="14" y="0" width="32" height="16" />
+    <!-- Bottom bar -->
+    <rect x="14" y="72" width="32" height="16" />
+    <!-- Corner steps -->
+    <rect x="4" y="4" width="12" height="12" />
+    <rect x="44" y="4" width="12" height="12" />
+    <rect x="4" y="72" width="12" height="12" />
+    <rect x="44" y="72" width="12" height="12" />
+  </g>
+
+  <!-- 'B' -->
+  <g id="letter-B" transform="translate(140, 0)">
+    <!-- Vertical stem -->
+    <rect x="0" y="0" width="16" height="88" />
+    <!-- Top bar -->
+    <rect x="16" y="0" width="32" height="14" />
+    <!-- Upper right loop corner -->
+    <rect x="46" y="10" width="12" height="22" />
+    <!-- Middle bar -->
+    <rect x="16" y="34" width="32" height="16" />
+    <!-- Lower right loop corner -->
+    <rect x="48" y="50" width="12" height="24" />
+    <!-- Bottom bar -->
+    <rect x="16" y="74" width="34" height="14" />
+  </g>
+
+  <!-- 'I' -->
+  <g id="letter-I" transform="translate(210, 0)">
+    <!-- Vertical column -->
+    <rect x="6" y="0" width="18" height="88" />
+  </g>
+
+  <!-- 'N' -->
+  <g id="letter-N" transform="translate(244, 0)">
+    <!-- Left vertical bar -->
+    <rect x="0" y="0" width="16" height="88" />
+    <!-- Diagonal stepped staircase -->
+    <rect x="14" y="12" width="12" height="16" />
+    <rect x="24" y="28" width="12" height="16" />
+    <rect x="34" y="44" width="12" height="16" />
+    <rect x="44" y="60" width="12" height="16" />
+    <!-- Right vertical bar -->
+    <rect x="52" y="0" width="16" height="88" />
+  </g>
+</svg>

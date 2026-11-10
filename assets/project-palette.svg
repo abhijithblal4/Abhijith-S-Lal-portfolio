@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" fill="none">
+  <!-- Palette Studio UI Preview -->
+  <rect width="600" height="380" rx="16" fill="#0F172A" />
+
+  <!-- Spectrum Gradient Waves -->
+  <defs>
+    <linearGradient id="spectrum1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="25%" stop-color="#8B5CF6" />
+      <stop offset="50%" stop-color="#EC4899" />
+      <stop offset="75%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#10B981" />
+    </linearGradient>
+  </defs>
+
+  <!-- Studio Header -->
+  <rect x="40" y="30" width="520" height="40" rx="8" fill="#1E293B" />
+  <circle cx="64" cy="50" r="6" fill="#EF4444" />
+  <circle cx="80" cy="50" r="6" fill="#F59E0B" />
+  <circle cx="96" cy="50" r="6" fill="#10B981" />
+  <text x="120" y="54" fill="#94A3B8" font-size="11" font-family="sans-serif" font-weight="600">palette-studio.io / tokens / theme-core.json</text>
+
+  <!-- Color Swatches Row 1 -->
+  <g transform="translate(40, 90)">
+    <!-- Swatch 1 -->
+    <rect width="96" height="120" rx="10" fill="#1E293B" stroke="#334155" stroke-width="1" />
+    <rect x="8" y="8" width="80" height="60" rx="6" fill="#3B82F6" />
+    <text x="12" y="86" fill="#F8FAFC" font-size="10" font-family="sans-serif" font-weight="bold">Blue-500</text>
+    <text x="12" y="100" fill="#64748B" font-size="9" font-family="monospace">#3B82F6</text>
+    <rect x="58" y="84" width="30" height="16" rx="4" fill="#10B981" fill-opacity="0.2" />
+    <text x="64" y="96" fill="#34D399" font-size="8" font-family="sans-serif" font-weight="bold">AAA</text>
+
+    <!-- Swatch 2 -->
+    <g transform="translate(106, 0)">
+      <rect width="96" height="120" rx="10" fill="#1E293B" stroke="#334155" stroke-width="1" />
+      <rect x="8" y="8" width="80" height="60" rx="6" fill="#8B5CF6" />
+      <text x="12" y="86" fill="#F8FAFC" font-size="10" font-family="sans-serif" font-weight="bold">Violet-500</text>
+      <text x="12" y="100" fill="#64748B" font-size="9" font-family="monospace">#8B5CF6</text>
+      <rect x="58" y="84" width="30" height="16" rx="4" fill="#10B981" fill-opacity="0.2" />
+      <text x="64" y="96" fill="#34D399" font-size="8" font-family="sans-serif" font-weight="bold">AAA</text>
+    </g>
+
+    <!-- Swatch 3 -->
+    <g transform="translate(212, 0)">
+      <rect width="96" height="120" rx="10" fill="#1E293B" stroke="#334155" stroke-width="1" />
+      <rect x="8" y="8" width="80" height="60" rx="6" fill="#EC4899" />
+      <text x="12" y="86" fill="#F8FAFC" font-size="10" font-family="sans-serif" font-weight="bold">Pink-500</text>
+      <text x="12" y="100" fill="#64748B" font-size="9" font-family="monospace">#EC4899</text>
+      <rect x="58" y="84" width="30" height="16" rx="4" fill="#10B981" fill-opacity="0.2" />
+      <text x="64" y="96" fill="#34D399" font-size="8" font-family="sans-serif" font-weight="bold">AAA</text>
+    </g>
+
+    <!-- Swatch 4 -->
+    <g transform="translate(318, 0)">
+      <rect width="96" height="120" rx="10" fill="#1E293B" stroke="#334155" stroke-width="1" />
+      <rect x="8" y="8" width="80" height="60" rx="6" fill="#F59E0B" />
+      <text x="12" y="86" fill="#F8FAFC" font-size="10" font-family="sans-serif" font-weight="bold">Amber-500</text>
+      <text x="12" y="100" fill="#64748B" font-size="9" font-family="monospace">#F59E0B</text>
+      <rect x="58" y="84" width="30" height="16" rx="4" fill="#10B981" fill-opacity="0.2" />
+      <text x="64" y="96" fill="#34D399" font-size="8" font-family="sans-serif" font-weight="bold">AA</text>
+    </g>
+
+    <!-- Swatch 5 -->
+    <g transform="translate(424, 0)">
+      <rect width="96" height="120" rx="10" fill="#1E293B" stroke="#334155" stroke-width="1" />
+      <rect x="8" y="8" width="80" height="60" rx="6" fill="#10B981" />
+      <text x="12" y="86" fill="#F8FAFC" font-size="10" font-family="sans-serif" font-weight="bold">Emerald-500</text>
+      <text x="12" y="100" fill="#64748B" font-size="9" font-family="monospace">#10B981</text>
+      <rect x="58" y="84" width="30" height="16" rx="4" fill="#10B981" fill-opacity="0.2" />
+      <text x="64" y="96" fill="#34D399" font-size="8" font-family="sans-serif" font-weight="bold">AAA</text>
+    </g>
+  </g>
+
+  <!-- Interactive Contrast Wave Analyzer -->
+  <g transform="translate(40, 230)">
+    <rect width="520" height="110" rx="10" fill="#1E293B" stroke="#334155" stroke-width="1" />
+    <text x="20" y="30" fill="#F8FAFC" font-size="12" font-family="sans-serif" font-weight="bold">Luminance Harmonizer (APCA & WCAG 3.0)</text>
+    
+    <!-- Wave line -->
+    <path d="M 20 75 Q 80 40 140 70 T 260 70 T 380 70 T 500 70" stroke="url(#spectrum1)" stroke-width="4" fill="none" stroke-linecap="round" />
+    <circle cx="200" cy="70" r="7" fill="#FFFFFF" stroke="#8B5CF6" stroke-width="3" />
+    <rect x="175" y="85" width="50" height="18" rx="4" fill="#8B5CF6" />
+    <text x="183" y="97" fill="#FFFFFF" font-size="8" font-family="sans-serif" font-weight="bold">Lc 75.4</text>
+  </g>
+</svg>

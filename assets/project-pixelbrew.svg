@@ -1,0 +1,221 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" fill="none">
+  <!-- Pixel Brew Coffee Ordering App Preview -->
+  <defs>
+    <linearGradient id="coffeeBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2C1B14" />
+      <stop offset="50%" stop-color="#1F130E" />
+      <stop offset="100%" stop-color="#140B07" />
+    </linearGradient>
+    <linearGradient id="warmGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F97316" stop-opacity="0.25" />
+      <stop offset="50%" stop-color="#3B82F6" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </linearGradient>
+    <pattern id="pixelPattern" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="2" height="2" fill="#FAF7F2" fill-opacity="0.04" />
+    </pattern>
+    <clipPath id="phoneClip1">
+      <rect x="70" y="32" width="210" height="328" rx="28" />
+    </clipPath>
+    <clipPath id="phoneClip2">
+      <rect x="320" y="32" width="210" height="328" rx="28" />
+    </clipPath>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="600" height="380" rx="16" fill="url(#coffeeBg)" />
+  <rect width="600" height="380" rx="16" fill="url(#warmGlow)" />
+  <rect width="600" height="380" rx="16" fill="url(#pixelPattern)" />
+
+  <!-- Ambient Coffee Beans / Steam Decorative Accent -->
+  <circle cx="175" cy="40" r="120" fill="#EA580C" fill-opacity="0.08" filter="blur(30px)" />
+  <circle cx="425" cy="180" r="100" fill="#2563EB" fill-opacity="0.08" filter="blur(30px)" />
+
+  <!-- ================= PHONE 1: DISCOVERY & MENU ================= -->
+  <!-- Phone 1 Shadow & Outer Frame -->
+  <rect x="66" y="28" width="218" height="336" rx="32" fill="#0C0705" stroke="#3D291F" stroke-width="2" />
+  
+  <g clip-path="url(#phoneClip1)">
+    <!-- Screen Background (Warm Light Cream) -->
+    <rect x="70" y="32" width="210" height="328" fill="#FDFBF7" />
+
+    <!-- Status Bar & Dynamic Island -->
+    <rect x="135" y="40" width="80" height="16" rx="8" fill="#140B07" />
+    <text x="86" y="52" fill="#140B07" font-size="9" font-family="sans-serif" font-weight="bold">9:41</text>
+    <circle cx="260" cy="48" r="3" fill="#140B07" />
+
+    <!-- App Header: Greeting & Profile -->
+    <g transform="translate(86, 68)">
+      <text x="0" y="10" fill="#785642" font-size="9" font-family="sans-serif" font-weight="600">Good morning ☕</text>
+      <text x="0" y="24" fill="#2C1B14" font-size="14" font-family="sans-serif" font-weight="800">Pixel Brew</text>
+      
+      <!-- Cart Icon Badge with notification -->
+      <circle cx="162" cy="14" r="14" fill="#FAF5EE" stroke="#E6DACB" stroke-width="1" />
+      <path d="M 156 12 H 168 L 166 18 H 158 Z" fill="#2C1B14" />
+      <circle cx="169" cy="8" r="4" fill="#EA580C" />
+    </g>
+
+    <!-- Search Bar -->
+    <g transform="translate(86, 104)">
+      <rect width="178" height="28" rx="8" fill="#FAF5EE" stroke="#EFE4D6" stroke-width="1" />
+      <circle cx="14" cy="14" r="4.5" stroke="#9A7B68" stroke-width="1.5" fill="none" />
+      <line x1="17.5" y1="17.5" x2="21" y2="21" stroke="#9A7B68" stroke-width="1.5" stroke-linecap="round" />
+      <text x="28" y="18" fill="#9A7B68" font-size="9" font-family="sans-serif">Search your favorite coffee...</text>
+    </g>
+
+    <!-- Category Tabs -->
+    <g transform="translate(86, 142)">
+      <!-- Active Tab: All Coffee -->
+      <rect width="44" height="20" rx="10" fill="#2C1B14" />
+      <text x="22" y="13" fill="#FFFFFF" font-size="8" font-family="sans-serif" font-weight="bold" text-anchor="middle">All</text>
+
+      <rect x="48" width="56" height="20" rx="10" fill="#FAF5EE" stroke="#EFE4D6" stroke-width="1" />
+      <text x="76" y="13" fill="#785642" font-size="8" font-family="sans-serif" font-weight="600" text-anchor="middle">Espresso</text>
+
+      <rect x="108" width="60" height="20" rx="10" fill="#FAF5EE" stroke="#EFE4D6" stroke-width="1" />
+      <text x="138" y="13" fill="#785642" font-size="8" font-family="sans-serif" font-weight="600" text-anchor="middle">Cold Brew</text>
+    </g>
+
+    <!-- Featured Coffee Product Cards Grid -->
+    <!-- Product Card 1: Caramel Macchiato -->
+    <g transform="translate(86, 172)">
+      <rect width="84" height="110" rx="12" fill="#FFFFFF" stroke="#EFE4D6" stroke-width="1" />
+      <!-- Coffee Cup Visual -->
+      <rect x="8" y="8" width="68" height="52" rx="8" fill="#F4EAE0" />
+      <ellipse cx="42" cy="24" rx="18" ry="6" fill="#6F432A" />
+      <path d="M 24 24 C 24 44 60 44 60 24" fill="#A46B47" />
+      <!-- Star Rating -->
+      <rect x="12" y="44" width="28" height="12" rx="4" fill="#2C1B14" fill-opacity="0.8" />
+      <text x="26" y="53" fill="#FBBF24" font-size="7" font-family="sans-serif" font-weight="bold" text-anchor="middle">★ 4.9</text>
+      <!-- Title & Price -->
+      <text x="8" y="74" fill="#2C1B14" font-size="9" font-family="sans-serif" font-weight="bold">Macchiato</text>
+      <text x="8" y="86" fill="#9A7B68" font-size="7" font-family="sans-serif">Caramel drizzle</text>
+      <text x="8" y="100" fill="#2C1B14" font-size="10" font-family="sans-serif" font-weight="800">$4.80</text>
+      <!-- Add Button -->
+      <rect x="62" y="88" width="16" height="16" rx="6" fill="#EA580C" />
+      <text x="70" y="100" fill="#FFFFFF" font-size="11" font-family="sans-serif" font-weight="bold" text-anchor="middle">+</text>
+    </g>
+
+    <!-- Product Card 2: Iced Hazelnut Latte -->
+    <g transform="translate(178, 172)">
+      <rect width="86" height="110" rx="12" fill="#FFFFFF" stroke="#EFE4D6" stroke-width="1" />
+      <rect x="8" y="8" width="70" height="52" rx="8" fill="#E8F1F5" />
+      <path d="M 30 18 L 34 46 L 52 46 L 56 18 Z" fill="#8D5B3E" />
+      <!-- Ice cubes -->
+      <rect x="36" y="24" width="8" height="8" rx="2" fill="#FFFFFF" fill-opacity="0.7" />
+      <rect x="44" y="32" width="7" height="7" rx="2" fill="#FFFFFF" fill-opacity="0.7" />
+      <!-- Star Rating -->
+      <rect x="12" y="44" width="28" height="12" rx="4" fill="#2C1B14" fill-opacity="0.8" />
+      <text x="26" y="53" fill="#FBBF24" font-size="7" font-family="sans-serif" font-weight="bold" text-anchor="middle">★ 4.8</text>
+      <text x="8" y="74" fill="#2C1B14" font-size="9" font-family="sans-serif" font-weight="bold">Iced Latte</text>
+      <text x="8" y="86" fill="#9A7B68" font-size="7" font-family="sans-serif">Oat milk blend</text>
+      <text x="8" y="100" fill="#2C1B14" font-size="10" font-family="sans-serif" font-weight="800">$5.20</text>
+      <rect x="64" y="88" width="16" height="16" rx="6" fill="#2C1B14" />
+      <text x="72" y="100" fill="#FFFFFF" font-size="11" font-family="sans-serif" font-weight="bold" text-anchor="middle">+</text>
+    </g>
+
+    <!-- Bottom Navigation Bar -->
+    <g transform="translate(70, 316)">
+      <rect width="210" height="44" fill="#FFFFFF" stroke="#EFE4D6" stroke-width="1" />
+      <circle cx="35" cy="18" r="4" fill="#EA580C" />
+      <circle cx="85" cy="18" r="4" fill="#9A7B68" />
+      <circle cx="135" cy="18" r="4" fill="#9A7B68" />
+      <circle cx="185" cy="18" r="4" fill="#9A7B68" />
+    </g>
+  </g>
+
+  <!-- ================= PHONE 2: CUSTOMIZATION MODAL & CHECKOUT ================= -->
+  <!-- Phone 2 Shadow & Outer Frame -->
+  <rect x="316" y="28" width="218" height="336" rx="32" fill="#0C0705" stroke="#3D291F" stroke-width="2" />
+
+  <g clip-path="url(#phoneClip2)">
+    <!-- Screen Background -->
+    <rect x="320" y="32" width="210" height="328" fill="#FDFBF7" />
+
+    <!-- Status Bar -->
+    <rect x="385" y="40" width="80" height="16" rx="8" fill="#140B07" />
+
+    <!-- Modal Header -->
+    <g transform="translate(336, 68)">
+      <circle cx="12" cy="12" r="12" fill="#FAF5EE" stroke="#EFE4D6" stroke-width="1" />
+      <path d="M 16 8 L 8 12 L 16 16" stroke="#2C1B14" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+      <text x="36" y="16" fill="#2C1B14" font-size="12" font-family="sans-serif" font-weight="800">Customize Brew</text>
+    </g>
+
+    <!-- Product Spotlight Showcase -->
+    <g transform="translate(336, 96)">
+      <rect width="178" height="68" rx="12" fill="#FAF5EE" stroke="#EFE4D6" stroke-width="1" />
+      <!-- Coffee Cup with Pixel Foam -->
+      <ellipse cx="44" cy="28" rx="22" ry="8" fill="#D4A373" />
+      <path d="M 22 28 C 22 56 66 56 66 28" fill="#784B2C" />
+      <!-- Pixel Steam -->
+      <rect x="36" y="10" width="3" height="5" fill="#C59B79" />
+      <rect x="42" y="6" width="3" height="6" fill="#C59B79" />
+      <rect x="48" y="11" width="3" height="5" fill="#C59B79" />
+
+      <text x="80" y="28" fill="#2C1B14" font-size="11" font-family="sans-serif" font-weight="800">Caramel Macchiato</text>
+      <text x="80" y="42" fill="#9A7B68" font-size="8" font-family="sans-serif">Espresso + Steamed Milk</text>
+      <text x="80" y="56" fill="#EA580C" font-size="11" font-family="sans-serif" font-weight="800">$4.80</text>
+    </g>
+
+    <!-- Cup Size Selector -->
+    <g transform="translate(336, 176)">
+      <text x="0" y="0" fill="#2C1B14" font-size="9" font-family="sans-serif" font-weight="800">CUP SIZE</text>
+      
+      <!-- Size S -->
+      <rect y="8" width="54" height="28" rx="8" fill="#FAF5EE" stroke="#EFE4D6" stroke-width="1" />
+      <text x="27" y="25" fill="#785642" font-size="9" font-family="sans-serif" font-weight="bold" text-anchor="middle">S (8oz)</text>
+
+      <!-- Size M (Active Selection) -->
+      <rect x="62" y="8" width="54" height="28" rx="8" fill="#2C1B14" />
+      <text x="89" y="25" fill="#FFFFFF" font-size="9" font-family="sans-serif" font-weight="bold" text-anchor="middle">M (12oz)</text>
+
+      <!-- Size L -->
+      <rect x="124" y="8" width="54" height="28" rx="8" fill="#FAF5EE" stroke="#EFE4D6" stroke-width="1" />
+      <text x="151" y="25" fill="#785642" font-size="9" font-family="sans-serif" font-weight="bold" text-anchor="middle">L (16oz)</text>
+    </g>
+
+    <!-- Milk Options Selector -->
+    <g transform="translate(336, 226)">
+      <text x="0" y="0" fill="#2C1B14" font-size="9" font-family="sans-serif" font-weight="800">MILK PREFERENCE</text>
+      
+      <rect y="8" width="84" height="24" rx="6" fill="#2563EB" fill-opacity="0.1" stroke="#2563EB" stroke-width="1" />
+      <text x="42" y="23" fill="#2563EB" font-size="8" font-family="sans-serif" font-weight="bold" text-anchor="middle">Oat Milk ✓</text>
+
+      <rect x="92" y="8" width="84" height="24" rx="6" fill="#FAF5EE" stroke="#EFE4D6" stroke-width="1" />
+      <text x="134" y="23" fill="#785642" font-size="8" font-family="sans-serif" font-weight="600" text-anchor="middle">Almond Milk</text>
+    </g>
+
+    <!-- Sugar & Ice Level Pills -->
+    <g transform="translate(336, 268)">
+      <text x="0" y="0" fill="#2C1B14" font-size="9" font-family="sans-serif" font-weight="800">SWEETNESS</text>
+      
+      <rect y="8" width="54" height="20" rx="6" fill="#FAF5EE" stroke="#EFE4D6" stroke-width="1" />
+      <text x="27" y="21" fill="#785642" font-size="7" font-family="sans-serif" font-weight="bold" text-anchor="middle">No Sugar</text>
+
+      <rect x="62" y="8" width="54" height="20" rx="6" fill="#EA580C" fill-opacity="0.1" stroke="#EA580C" stroke-width="1" />
+      <text x="89" y="21" fill="#EA580C" font-size="7" font-family="sans-serif" font-weight="bold" text-anchor="middle">50% Sweet</text>
+
+      <rect x="124" y="8" width="54" height="20" rx="6" fill="#FAF5EE" stroke="#EFE4D6" stroke-width="1" />
+      <text x="151" y="21" fill="#785642" font-size="7" font-family="sans-serif" font-weight="bold" text-anchor="middle">100%</text>
+    </g>
+
+    <!-- Primary Add to Order CTA Button -->
+    <g transform="translate(336, 308)">
+      <rect width="178" height="36" rx="10" fill="#EA580C" />
+      <text x="89" y="22" fill="#FFFFFF" font-size="10" font-family="sans-serif" font-weight="bold" text-anchor="middle">Add to Cart • $5.40 ☕</text>
+    </g>
+  </g>
+
+  <!-- Floating Badge Top Left: Coffee Brand Accent -->
+  <g transform="translate(24, 20)">
+    <rect width="110" height="28" rx="14" fill="#2C1B14" stroke="#784B2C" stroke-width="1" />
+    <text x="55" y="18" fill="#FDFBF7" font-size="10" font-family="sans-serif" font-weight="bold" text-anchor="middle">☕ PIXEL BREW</text>
+  </g>
+
+  <!-- Floating Badge Bottom Right: Figma Prototype -->
+  <g transform="translate(460, 20)">
+    <rect width="116" height="28" rx="14" fill="#18181B" stroke="#3F3F46" stroke-width="1" />
+    <text x="58" y="18" fill="#A1A1AA" font-size="9" font-family="sans-serif" font-weight="bold" text-anchor="middle">Figma Prototype ↗</text>
+  </g>
+</svg>

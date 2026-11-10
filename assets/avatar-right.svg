@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <clipPath id="circleClipRight">
+      <circle cx="60" cy="60" r="54" />
+    </clipPath>
+    <linearGradient id="warmSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E2B183" />
+      <stop offset="50%" stop-color="#F2D1A6" />
+      <stop offset="100%" stop-color="#FDE8C8" />
+    </linearGradient>
+    <linearGradient id="fleeceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#264653" />
+      <stop offset="100%" stop-color="#1B323D" />
+    </linearGradient>
+  </defs>
+
+  <!-- Orange/Coral Outer Ring -->
+  <circle cx="60" cy="60" r="58" stroke="#F15A38" stroke-width="4.5" fill="#FAF9F5" />
+
+  <!-- Clipped Portrait Scene -->
+  <g clip-path="url(#circleClipRight)">
+    <!-- Golden Hour Mountain Background -->
+    <rect width="120" height="120" fill="url(#warmSky)" />
+
+    <!-- Distant layered warm ridges -->
+    <polygon points="0,55 35,45 80,60 120,48 120,120 0,120" fill="#B07D62" opacity="0.6" />
+    <polygon points="0,68 45,55 90,70 120,62 120,120 0,120" fill="#7D4F38" opacity="0.8" />
+    
+    <!-- Silhouette of pine ridge -->
+    <polygon points="0,85 20,80 40,88 70,78 100,86 120,80 120,120 0,120" fill="#2D4A3E" />
+
+    <!-- Person viewed in 3/4 profile looking left/forward -->
+    <!-- Shoulders -->
+    <path d="M 28 120 C 30 96, 45 90, 68 88 C 88 88, 105 95, 108 120 Z" fill="url(#fleeceGrad)" />
+    
+    <!-- Neck -->
+    <rect x="54" y="74" width="16" height="18" rx="4" fill="#E2AC93" />
+
+    <!-- Head profile -->
+    <ellipse cx="62" cy="62" rx="15" ry="17" fill="#F0BEA7" />
+
+    <!-- Ear -->
+    <ellipse cx="68" cy="63" rx="3.5" ry="5" fill="#E2AC93" />
+
+    <!-- Baseball Cap (khaki/sand) -->
+    <!-- Cap crown -->
+    <path d="M 46 56 C 46 43, 56 38, 72 40 C 76 41, 78 45, 78 54 Z" fill="#D4A373" />
+    <!-- Cap brim pointing forward / left -->
+    <path d="M 40 54 C 40 50, 48 51, 56 52 L 40 57 Z" fill="#B88250" />
+    <path d="M 36 55 C 38 53, 50 51, 60 52 C 50 55, 42 58, 36 55 Z" fill="#C59361" />
+
+    <!-- Cap button on top -->
+    <ellipse cx="64" cy="38" rx="2.5" ry="1.5" fill="#8C5C35" />
+
+    <!-- Hair at the back/neck under cap -->
+    <path d="M 68 56 C 74 58, 76 66, 74 72 C 72 71, 70 65, 68 62 Z" fill="#3D261D" />
+
+    <!-- Eye in profile -->
+    <path d="M 52 59 Q 55 58 57 60" stroke="#3D261D" stroke-width="2" stroke-linecap="round" fill="none" />
+    <path d="M 51 55 Q 54 54 57 55" stroke="#4E342E" stroke-width="1.5" stroke-linecap="round" fill="none" />
+
+    <!-- Nose profile hint -->
+    <path d="M 47 62 L 45 65 L 48 66" stroke="#D3967F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    
+    <!-- Smile in profile -->
+    <path d="M 51 70 Q 55 72 58 70" stroke="#9E4D3E" stroke-width="1.8" stroke-linecap="round" fill="none" />
+  </g>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 70" fill="none">
+  <!-- Hand-drawn curved arrow pointing up-left toward ROBIN box -->
+  <path d="M 48 62 C 38 46, 28 30, 12 14" 
+        stroke="#222222" 
+        stroke-width="2.2" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" />
+  <!-- Arrowhead -->
+  <path d="M 28 12 C 20 12, 11 13, 10 14 C 11 22, 12 30, 14 38" 
+        stroke="#222222" 
+        stroke-width="2.2" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" />
+</svg>
