@@ -718,18 +718,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Floating hire dock dismiss button
-  const hireDockCloseBtn = document.getElementById('hireDockCloseBtn');
-  const hireFloatingDock = document.getElementById('hireFloatingDock');
-  if (hireDockCloseBtn && hireFloatingDock) {
-    hireDockCloseBtn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      hireFloatingDock.style.opacity = '0';
-      hireFloatingDock.style.transform = 'translateY(20px)';
-      hireFloatingDock.style.pointerEvents = 'none';
-      setTimeout(() => {
-        hireFloatingDock.style.display = 'none';
-      }, 300);
-    });
-  }
+
 });
