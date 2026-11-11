@@ -308,7 +308,7 @@ body {
   to { transform: rotate(360deg); }
 }
 
-/* Massive Typographic Lockup: PORTA / FOLIO 2026 */
+/* Massive Typographic Lockup: PORTFOLIO 2026 */
 .hero-editorial-title {
   display: flex;
   flex-direction: column;
@@ -792,15 +792,17 @@ body {
   margin-bottom: 24px;
 }
 
-/* 3-Column Editorial Grid (Estudios, Herramientas, Experiencia) */
+/* Editorial Breakdown Grid (Education & Tools - 2 Columns) */
+.editorial-two-col,
 .editorial-three-col {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 36px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 48px;
   padding: 40px;
-  background-color: var(--bg-subtle);
+  background-color: var(--bg-white);
   border-radius: 24px;
   border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
 }
 
 .col-header-title {
@@ -1391,8 +1393,11 @@ body {
    RESPONSIVE DESIGN BREAKPOINTS
    ========================================================================== */
 @media (max-width: 900px) {
+  .editorial-two-col,
   .editorial-three-col {
     grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 24px;
   }
 }
 
