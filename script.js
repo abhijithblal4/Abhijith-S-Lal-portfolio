@@ -315,20 +315,21 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
 
           ${data.problemSolutionList ? `
-            <div style="background: #FFF; border-radius: 12px; padding: 22px; border: 1px solid rgba(0,0,0,0.08); margin-bottom: 24px;">
-              <h4 style="font-size: 14px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; color: #111; margin-bottom: 14px; display: flex; align-items: center; gap: 8px;">
-                <span>☕ Problem & Solution Breakdown</span>
+            <div style="background: #FAFAF9; border-radius: 12px; padding: 22px; border: 1px solid rgba(0,0,0,0.08); margin-bottom: 24px;">
+              <h4 style="font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; color: #111; margin-bottom: 14px; display: flex; align-items: center; gap: 8px;">
+                <span style="color: #E31C64;">✦</span>
+                <span>Problem & Solution Breakdown</span>
               </h4>
               <div style="display: flex; flex-direction: column; gap: 10px;">
                 ${data.problemSolutionList.map((item, idx) => `
-                  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; background: #FAF9F5; padding: 14px 18px; border-radius: 8px; border-left: 3px solid #EA580C;">
+                  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; background: #FFFFFF; padding: 14px 18px; border-radius: 8px; border-left: 3px solid #E31C64; border-top: 1px solid #EFEFEF; border-right: 1px solid #EFEFEF; border-bottom: 1px solid #EFEFEF;">
                     <div>
-                      <span style="font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; color: #DC2626; display: block; margin-bottom: 3px;">Problem 0${idx + 1}</span>
-                      <span style="font-size: 13px; font-weight: 600; color: #2C1B14; line-height: 1.4;">${item.problem}</span>
+                      <span style="font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; color: #E31C64; display: block; margin-bottom: 3px;">Problem 0${idx + 1}</span>
+                      <span style="font-size: 13px; font-weight: 600; color: #111; line-height: 1.4;">${item.problem}</span>
                     </div>
                     <div>
-                      <span style="font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; color: #16A34A; display: block; margin-bottom: 3px;">Design Solution</span>
-                      <span style="font-size: 13px; font-weight: 600; color: #166534; line-height: 1.4;">${item.solution}</span>
+                      <span style="font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; color: #68BFA0; display: block; margin-bottom: 3px;">Design Solution</span>
+                      <span style="font-size: 13px; font-weight: 600; color: #2B5748; line-height: 1.4;">${item.solution}</span>
                     </div>
                   </div>
                 `).join('')}
@@ -336,30 +337,30 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
           ` : `
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 24px;">
-              <div style="background: #FFF; padding: 20px; border-radius: 10px; border: 1px solid rgba(0,0,0,0.08);">
-                <h4 style="font-size: 14px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; color: #EB5A3C; margin-bottom: 8px;">The Challenge</h4>
+              <div style="background: #FAFAF9; padding: 20px; border-radius: 10px; border: 1px solid rgba(0,0,0,0.08); border-left: 3px solid #E31C64;">
+                <h4 style="font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; color: #E31C64; margin-bottom: 8px;">The Challenge</h4>
                 <p style="font-size: 14px; color: #444; line-height: 1.5;">${data.problem}</p>
               </div>
-              <div style="background: #FFF; padding: 20px; border-radius: 10px; border: 1px solid rgba(0,0,0,0.08);">
-                <h4 style="font-size: 14px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; color: #0D825C; margin-bottom: 8px;">The Design Solution</h4>
+              <div style="background: #FAFAF9; padding: 20px; border-radius: 10px; border: 1px solid rgba(0,0,0,0.08); border-left: 3px solid #68BFA0;">
+                <h4 style="font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; color: #68BFA0; margin-bottom: 8px;">The Design Solution</h4>
                 <p style="font-size: 14px; color: #444; line-height: 1.5;">${data.solution}</p>
               </div>
             </div>
           `}
 
-          <div style="background: #FEF08A; padding: 16px 20px; border-radius: 8px; border: 1px solid #FDE047; margin-bottom: 20px;">
-            <strong style="font-size: 13px; font-family: monospace; text-transform: uppercase; color: #854D0E; display: block; margin-bottom: 4px;">Verified Impact & Features:</strong>
-            <span style="font-size: 15px; font-weight: 700; color: #111;">${data.stats}</span>
+          <div style="background: #FAFAF9; padding: 16px 20px; border-radius: 8px; border: 1px solid #E5E5E5; margin-bottom: 20px; border-left: 3px solid #111;">
+            <strong style="font-size: 12px; font-family: monospace; text-transform: uppercase; color: #666; display: block; margin-bottom: 4px;">Verified Impact & Features:</strong>
+            <span style="font-size: 14px; font-weight: 700; color: #111;">${data.stats}</span>
           </div>
 
           ${data.figmaLink ? `
             <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
-              <a href="${data.figmaLink}" target="_blank" rel="noopener noreferrer" class="btn-submit-contact" style="background-color: #2C1B14; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;">
-                <span>🎨 Open in Figma</span>
+              <a href="${data.figmaLink}" target="_blank" rel="noopener noreferrer" style="background-color: #111; color: #FFF; padding: 12px 24px; border-radius: 999px; font-size: 13px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all 0.2s ease;">
+                <span>✦ Open in Figma</span>
                 <span>↗</span>
               </a>
               ${data.fullImage ? `
-                <a href="${data.fullImage}" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
+                <a href="${data.fullImage}" target="_blank" rel="noopener noreferrer" style="background-color: #FFF; color: #111; border: 1px solid #DDD; padding: 12px 24px; border-radius: 999px; font-size: 13px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s ease;">
                   <span>🔍 View Full Design Sheet</span>
                   <span>↗</span>
                 </a>
@@ -406,7 +407,7 @@ document.addEventListener('DOMContentLoaded', () => {
         boardHint.style.display = 'none';
       }
 
-      const emoji = sticker.getAttribute('data-emoji');
+      const emoji = sticker.textContent.trim();
       const stickerEl = document.createElement('div');
       stickerEl.className = 'placed-sticker';
       stickerEl.textContent = emoji;
@@ -714,6 +715,21 @@ document.addEventListener('DOMContentLoaded', () => {
       if (nametagCard) {
         nametagCard.style.transform = 'perspective(600px) rotateX(0deg) rotateY(0deg) rotate(-1.5deg)';
       }
+    });
+  }
+
+  // Floating hire dock dismiss button
+  const hireDockCloseBtn = document.getElementById('hireDockCloseBtn');
+  const hireFloatingDock = document.getElementById('hireFloatingDock');
+  if (hireDockCloseBtn && hireFloatingDock) {
+    hireDockCloseBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      hireFloatingDock.style.opacity = '0';
+      hireFloatingDock.style.transform = 'translateY(20px)';
+      hireFloatingDock.style.pointerEvents = 'none';
+      setTimeout(() => {
+        hireFloatingDock.style.display = 'none';
+      }, 300);
     });
   }
 });
