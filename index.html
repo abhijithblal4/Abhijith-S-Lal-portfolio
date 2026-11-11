@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -10,7 +10,7 @@
   <!-- Google Fonts: Pixelify Sans (Retro Pixel), Caveat (Handwritten Doodles), Plus Jakarta Sans (Headings), JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=JetBrains+Mono:wght@600;700;800&family=Pixelify+Sans:wght@600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Permanent+Marker&family=Caveat:wght@600;700&family=JetBrains+Mono:wght@600;700;800&family=Pixelify+Sans:wght@600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -25,7 +25,7 @@
       <!-- Nav Left: Smiley Button & Nav Tabs -->
       <div class="nav-left">
         <!-- Pink Smiley Button -->
-        <button class="smiley-btn" id="smileyBtn" title="Say Hi! (•‿•)" aria-label="Greeting Button">
+        <button class="smiley-btn" id="smileyBtn" title="Say Hi!" aria-label="Greeting Button">
           <svg viewBox="0 0 24 24">
             <circle cx="8.5" cy="9.5" r="1.5" />
             <circle cx="15.5" cy="9.5" r="1.5" />
@@ -38,25 +38,33 @@
           <ul class="nav-links">
             <li>
               <a href="#home" class="nav-link active">
-                <span class="icon">★</span>
+                <span class="icon">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2a4 4 0 0 1 4 4c0 .73-.2 1.41-.54 2H18a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-2.1c-.24 1.28-.9 2.38-1.9 3.1l2.5 3.5a1 1 0 0 1-.2 1.4 1 1 0 0 1-1.4-.2L12.5 16h-1l-2.4 2.8a1 1 0 0 1-1.4.2 1 1 0 0 1-.2-1.4l2.5-3.5c-1-.72-1.66-1.82-1.9-3.1H6a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h2.54A3.98 3.98 0 0 1 8 6a4 4 0 0 1 4-4zm0 2a2 2 0 0 0-2 2c0 .35.1.68.26.96l.3.44H13.44l.3-.44c.16-.28.26-.61.26-.96a2 2 0 0 0-2-2z"/></svg>
+                </span>
                 <span>HOME</span>
               </a>
             </li>
             <li>
               <a href="#about" class="nav-link">
-                <span class="icon">👤</span>
+                <span class="icon">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                </span>
                 <span>ABOUT</span>
               </a>
             </li>
             <li>
               <a href="#case-study" class="nav-link">
-                <span class="icon">⊞</span>
+                <span class="icon">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                </span>
                 <span>CASE STUDY</span>
               </a>
             </li>
             <li>
               <a href="#playground" class="nav-link">
-                <span class="icon">✦</span>
+                <span class="icon">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                </span>
                 <span>PLAYGROUND</span>
               </a>
             </li>
@@ -96,7 +104,7 @@
 
         <!-- Contact CTA Button -->
         <a href="#contact" class="nav-contact-btn">
-          <span class="heart-icon">♥</span>
+          <span class="heart-icon">&#9825;</span>
           <span>CONTACT</span>
         </a>
 
@@ -117,36 +125,74 @@
        HERO SECTION (EXACT MATCH TO REFERENCE SCREENSHOT)
        ========================================================================= -->
   <section class="hero-section" id="home">
+    <!-- Spider-Man Lightning / Action Lines decoration -->
+    <svg class="spidey-action-lines" aria-hidden="true" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg" style="position:absolute;top:0;right:0;width:380px;height:280px;pointer-events:none;opacity:0.12;z-index:0;">
+      <!-- Action burst lines radiating from corner -->
+      <line x1="400" y1="0" x2="200" y2="300" stroke="#CC0000" stroke-width="3"/>
+      <line x1="400" y1="0" x2="150" y2="300" stroke="#CC0000" stroke-width="2"/>
+      <line x1="400" y1="0" x2="260" y2="300" stroke="#CC0000" stroke-width="2"/>
+      <line x1="400" y1="0" x2="320" y2="300" stroke="#111" stroke-width="1.5"/>
+      <line x1="400" y1="0" x2="380" y2="300" stroke="#111" stroke-width="1.5"/>
+      <line x1="400" y1="0" x2="80" y2="300" stroke="#CC0000" stroke-width="1.5"/>
+      <line x1="400" y1="0" x2="20" y2="260" stroke="#111" stroke-width="1"/>
+      <line x1="400" y1="0" x2="0" y2="200" stroke="#CC0000" stroke-width="2"/>
+      <line x1="400" y1="0" x2="0" y2="140" stroke="#111" stroke-width="1.5"/>
+      <line x1="400" y1="0" x2="0" y2="80" stroke="#CC0000" stroke-width="1.5"/>
+      <line x1="400" y1="0" x2="0" y2="30" stroke="#111" stroke-width="1"/>
+    </svg>
+    <!-- Left side action lines -->
+    <svg aria-hidden="true" viewBox="0 0 300 400" fill="none" xmlns="http://www.w3.org/2000/svg" style="position:absolute;top:0;left:0;width:260px;height:340px;pointer-events:none;opacity:0.10;z-index:0;">
+      <line x1="0" y1="0" x2="300" y2="200" stroke="#CC0000" stroke-width="3"/>
+      <line x1="0" y1="0" x2="300" y2="260" stroke="#111" stroke-width="2"/>
+      <line x1="0" y1="0" x2="300" y2="320" stroke="#CC0000" stroke-width="2"/>
+      <line x1="0" y1="0" x2="260" y2="400" stroke="#111" stroke-width="1.5"/>
+      <line x1="0" y1="0" x2="180" y2="400" stroke="#CC0000" stroke-width="1.5"/>
+      <line x1="0" y1="0" x2="100" y2="400" stroke="#111" stroke-width="1"/>
+      <line x1="0" y1="0" x2="300" y2="150" stroke="#CC0000" stroke-width="1.5"/>
+      <line x1="0" y1="0" x2="300" y2="90" stroke="#111" stroke-width="1.5"/>
+    </svg>
+    <!-- Spider-Man web swing graphic top-right -->
+    <svg aria-hidden="true" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" style="position:absolute;top:-10px;right:60px;width:160px;height:160px;pointer-events:none;opacity:0.22;z-index:1;">
+      <g stroke="#CC0000" stroke-width="1.5">
+        <line x1="100" y1="0" x2="0" y2="200"/><line x1="100" y1="0" x2="50" y2="200"/><line x1="100" y1="0" x2="100" y2="200"/><line x1="100" y1="0" x2="150" y2="200"/><line x1="100" y1="0" x2="200" y2="200"/>
+        <line x1="0" y1="0" x2="200" y2="200"/>
+        <ellipse cx="100" cy="0" rx="30" ry="30"/><ellipse cx="100" cy="0" rx="60" ry="60"/><ellipse cx="100" cy="0" rx="90" ry="90"/><ellipse cx="100" cy="0" rx="120" ry="120"/>
+      </g>
+    </svg>
     <div class="hero-wrapper">
 
-      <!-- Top Row: "MADE THINGS" Pill + "my name is" + "PIXEL PERFECT" Pill -->
-      <div class="hero-top-annotation">
-        <div class="pill-badge pill-made-things">MADE THINGS</div>
+      <!-- Authentic Spider-Man "HELLO my name is" Name Board -->
+      <div class="spidey-nametag-wrapper">
         
-        <div class="my-name-is-group">
-          <span class="my-name-is-text">my name is</span>
-          <img src="assets/hand-underline.svg" class="hand-drawn-underline" alt="" aria-hidden="true">
-        </div>
-
-        <div class="pill-badge pill-sweat-details">PIXEL PERFECT</div>
-      </div>
-
-      <!-- ABHIJITH S LAL Sketch Box & Sticky Annotations -->
-      <div class="robin-box-container">
-        
-        <!-- Left Yellow Sticky Note: "UI/UX Designer" + Arrow pointing up-right -->
+        <!-- Left Yellow Sticky Note: "UI/UX Designer" -->
         <div class="sticky-annotation-left">
           <img src="assets/arrow-left.svg" class="doodle-arrow-left" alt="" aria-hidden="true">
           <div class="tape-note-yellow" id="heroRoleNote">UI/UX Designer</div>
         </div>
 
-        <!-- Central Hand-drawn Marker Box with Pixel "ABHIJITH S LAL" -->
-        <div class="robin-sketch-box">
-          <img src="assets/sketch-box.svg" class="sketch-box-svg" alt="" aria-hidden="true">
-          <h1 class="robin-pixel-text" id="heroNameText">ABHIJITH S LAL</h1>
+        <!-- Electric Comic Lightning Bolts (Spider-Sense Tingles) -->
+        <svg class="spidey-lightning-bolt lightning-top-left" viewBox="0 0 60 70" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <polygon points="34,2 10,34 26,34 6,68 46,26 28,26" fill="#0055FF" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round" transform="translate(3, 3)"/>
+          <polygon points="34,2 10,34 26,34 6,68 46,26 28,26" fill="#E51A24" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round"/>
+        </svg>
+
+        <svg class="spidey-lightning-bolt lightning-top-right" viewBox="0 0 60 70" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <polygon points="26,2 50,34 34,34 54,68 14,26 32,26" fill="#0055FF" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round" transform="translate(3, 3)"/>
+          <polygon points="26,2 50,34 34,34 54,68 14,26 32,26" fill="#E51A24" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round"/>
+        </svg>
+
+        <!-- The Official Hello My Name Is Card -->
+        <div class="spidey-nametag-card">
+          <div class="nametag-header">
+            <div class="nametag-hello">HELLO</div>
+            <div class="nametag-sub">my name is</div>
+          </div>
+          <div class="nametag-body">
+            <h1 class="nametag-signature" id="heroNameText">Abhijith S Lal</h1>
+          </div>
         </div>
 
-        <!-- Right Mint Sticky Note: "Kerala, India" + Arrow pointing up-left -->
+        <!-- Right Red Sticky Note: "Kerala, India" -->
         <div class="sticky-annotation-right">
           <img src="assets/arrow-right.svg" class="doodle-arrow-right" alt="" aria-hidden="true">
           <div class="tape-note-green" id="heroLocationNote">Kerala, India</div>
@@ -154,35 +200,44 @@
 
       </div>
 
-      <!-- Status Line: Blue Pulsing Dot + Uppercase Status -->
+      <!-- Status Line: Pulsing Dot + Uppercase Status -->
       <div class="hero-status-line">
         <span class="status-dot-blue"></span>
         <span class="status-text" id="heroStatusText">OPEN TO NEW WORK AND GOOD PROBLEMS</span>
       </div>
 
-      <!-- Main Punchy Statement: Headline with Target & Flower Stickers & Flanking Avatars -->
+      <!-- Main Punchy Statement: Minimal & Clean (No cluttering sticker icons around photos) -->
       <div class="hero-headline-container">
         
-        <!-- Floating Left Avatar -->
-        <div class="floating-avatar floating-avatar-left" title="Abhijith S Lal 🌴">
+        <!-- Floating Left Avatar (Clean & Minimal) -->
+        <div class="floating-avatar floating-avatar-left" title="Abhijith S Lal">
           <img src="assets/abhijith-photo.jpg" alt="Abhijith S Lal">
         </div>
 
         <h2 class="hero-headline">
           <div class="headline-line">
             <span id="headlineLine1Text">Designing digital experiences that</span>
-            <img src="assets/sticker-target.svg" class="hero-sticker target-sticker" alt="Green target sticker" title="Bullseye!">
           </div>
           <div class="headline-line">
             <span id="headlineLine2Text">feel effortless and look unforgettable.</span>
-            <img src="assets/sticker-flower.svg" class="hero-sticker flower-sticker" alt="Pink flower sticker" title="Delight!">
           </div>
         </h2>
 
-        <!-- Floating Right Avatar -->
-        <div class="floating-avatar floating-avatar-right" title="Abhijith S Lal ✨">
+        <!-- Floating Right Avatar (Clean & Minimal) -->
+        <div class="floating-avatar floating-avatar-right" title="Abhijith S Lal">
           <img src="assets/abhijith-adiyogi.jpg" alt="Abhijith S Lal at Adiyogi">
         </div>
+
+        <!-- Ambient Spider-Sense Lightning Accents -->
+        <svg class="spidey-lightning-bolt lightning-hero-right" viewBox="0 0 60 70" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <polygon points="34,2 10,34 26,34 6,68 46,26 28,26" fill="#0055FF" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round" transform="translate(3, 3)"/>
+          <polygon points="34,2 10,34 26,34 6,68 46,26 28,26" fill="#E51A24" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round"/>
+        </svg>
+
+        <svg class="spidey-lightning-bolt lightning-hero-left" viewBox="0 0 60 70" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <polygon points="26,2 50,34 34,34 54,68 14,26 32,26" fill="#0055FF" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round" transform="translate(3, 3)"/>
+          <polygon points="26,2 50,34 34,34 54,68 14,26 32,26" fill="#E51A24" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round"/>
+        </svg>
 
       </div>
 
@@ -206,7 +261,7 @@
     <div class="container">
       
       <div class="section-header-badge">
-        <span class="tape-title">FEATURED WORK 📂</span>
+          <span class="tape-title">FEATURED WORK &#x1F4C2;</span>
         <h2 class="section-main-title">My Projects</h2>
         <p class="section-subtitle">Selected UI/UX and product design case studies crafted with care, clarity, and precision.</p>
       </div>
@@ -216,7 +271,7 @@
         
         <!-- Project 1: Pixel Brew (Featured First Project) -->
         <article class="project-card" data-category="product visual" data-project="pixelbrew">
-          <div class="washi-tape-corner washi-yellow">☕ Featured App</div>
+          <div class="washi-tape-corner washi-yellow">&#x2615; Featured App</div>
           <div class="project-preview-frame">
             <img src="assets/pixel-brew-thumb.jpg" alt="Pixel Brew Coffee Ordering App UI Mockup">
           </div>
@@ -232,15 +287,15 @@
           <p class="project-desc">Pixel Brew solves common coffee ordering problems by providing simple navigation, easy customization, a smooth checkout process, and convenient order tracking.</p>
           <div class="project-footer-row">
             <a href="https://www.figma.com/design/MLsNziMThRIg9sqso4pZzX/PIXEL-BREW?node-id=0-1&t=7HrbEVzLGbISiwXO-1" target="_blank" rel="noopener noreferrer" class="project-impact-stat" style="text-decoration: none; color: #EA580C; font-weight: 800;" onclick="event.stopPropagation();">
-              🎨 Live Figma ↗
+          &#x1F3A8; Live Figma &#x2197;
             </a>
-            <span class="project-link-action">Inspect Case Study ↗</span>
+            <span class="project-link-action">Inspect Case Study <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;margin-left:4px;"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></span>
           </div>
         </article>
 
         <!-- Project 2: NestPay -->
         <article class="project-card" data-category="product mobile" data-project="nestpay">
-          <div class="washi-tape-corner washi-mint">💳 Fintech App</div>
+          <div class="washi-tape-corner washi-mint">&#x1F4B3; Fintech App</div>
           <div class="project-preview-frame">
             <img src="assets/nestpay-thumb.jpg" alt="NestPay Budget & Savings App Mockup" style="object-fit:cover;width:100%;height:100%;border-radius:8px;">
           </div>
@@ -255,14 +310,14 @@
           <h3 class="project-title">NestPay</h3>
           <p class="project-desc">NestPay is a fintech app that helps users track budgets and savings effortlessly with a clean, intuitive dashboard and smart spending insights.</p>
           <div class="project-footer-row">
-            <span class="project-impact-stat">💰 Budget Tracker</span>
-            <span class="project-link-action">Inspect Case Study ↗</span>
+            <span class="project-impact-stat">&#x1F4B0; Budget Tracker</span>
+            <span class="project-link-action">Inspect Case Study <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;margin-left:4px;"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></span>
           </div>
         </article>
 
         <!-- Project 3: Trekly -->
         <article class="project-card" data-category="web travel" data-project="trekly">
-          <div class="washi-tape-corner washi-mint">🌿 Travel Web</div>
+          <div class="washi-tape-corner washi-mint">&#x1F33F; Travel Web</div>
           <div class="project-preview-frame">
             <img src="assets/trekly-thumb.jpg" alt="Trekly Kerala Travel Website" style="object-fit:cover;width:100%;height:100%;border-radius:8px;">
           </div>
@@ -277,8 +332,8 @@
           <h3 class="project-title">Trekly</h3>
           <p class="project-desc">Trekly is a Kerala travel website that takes visitors deep into local traditions, hidden villages, waterways, and low-budget authentic experiences.</p>
           <div class="project-footer-row">
-            <span class="project-impact-stat">🌴 Kerala Heritage</span>
-            <span class="project-link-action">Inspect Case Study ↗</span>
+            <span class="project-impact-stat">&#x1F334; Kerala Heritage</span>
+            <span class="project-link-action">Inspect Case Study <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;margin-left:4px;"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></span>
           </div>
         </article>
 
@@ -294,7 +349,7 @@
     <div class="container">
       
       <div class="section-header-badge">
-        <span class="tape-title">GET TO KNOW ME 🌴</span>
+          <span class="tape-title">GET TO KNOW ME &#x1F44B;</span>
         <h2 class="section-main-title">A Bit About Me</h2>
         <p class="section-subtitle">Passionate about thoughtful interfaces, user needs, and effortless digital craft.</p>
       </div>
@@ -309,7 +364,7 @@
             <div class="polaroid-photo">
               <img src="assets/abhijith-photo.jpg" alt="Abhijith S Lal">
             </div>
-            <div class="polaroid-caption">Abhijith S Lal • Kerala, India 🌴</div>
+        <div class="polaroid-caption">Abhijith S Lal &bull; Kerala, India &#127796;</div>
           </div>
 
           <!-- Kerala Time Widget -->
@@ -319,7 +374,7 @@
               <span class="chicago-status-pill">Active Now</span>
             </div>
             <div class="chicago-clock" id="chicagoClock">--:--:-- --</div>
-            <p style="font-size: 13px; color: #555; margin-top: 6px;">Indian Standard Time (IST) • Designing intuitive interfaces & digital experiences ✨</p>
+        <p style="font-size: 13px; color: #555; margin-top: 6px;">Indian Standard Time (IST) &bull; Designing intuitive interfaces</p>
           </div>
 
         </div>
@@ -328,7 +383,7 @@
         <div class="about-right-col">
           
           <p class="about-bio-text">
-            I’m a <strong>UI/UX designer</strong> who turns ideas into clear, intuitive digital experiences. I focus on thoughtful interfaces, user needs, and the small details that make products feel effortless to use.
+        I'm a <strong>UI/UX designer</strong> who turns ideas into clear, intuitive digital experiences. I focus on the user at every step.
           </p>
 
           <!-- 3 Design Principles Sticky Cards -->
@@ -350,21 +405,21 @@
           <!-- Tools Section -->
           <h4 class="skills-wall-title" style="margin-top: 24px;">Tools & Software</h4>
           <div class="tools-wall" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 24px;">
-            <button class="skill-sticker" onclick="showToast('Figma: UI/UX design, wireframing & design systems'); playPop();">🎨 Figma</button>
-            <button class="skill-sticker" onclick="showToast('Adobe Photoshop: Digital design, assets & raster editing'); playPop();">🖌️ Adobe Photoshop</button>
-            <button class="skill-sticker" onclick="showToast('Adobe Illustrator: Vector graphics, icons & branding'); playPop();">📐 Adobe Illustrator</button>
-            <button class="skill-sticker" onclick="showToast('Adobe XD: Interactive prototypes & layout design'); playPop();">💎 Adobe XD</button>
+              <button class="skill-sticker" onclick="showToast('Figma: UI/UX design, wireframing & design systems'); playPop();">&#x1F3A8; Figma</button>
+              <button class="skill-sticker" onclick="showToast('Adobe Photoshop: Digital design, assets & raster editing'); playPop();">&#x1F5BC; Adobe Photoshop</button>
+              <button class="skill-sticker" onclick="showToast('Adobe Illustrator: Vector graphics, icons & branding'); playPop();">&#x270F; Adobe Illustrator</button>
+              <button class="skill-sticker" onclick="showToast('Adobe XD: Interactive prototypes & layout design'); playPop();">&#x1F4CB; Adobe XD</button>
           </div>
 
           <!-- Skills Section -->
           <h4 class="skills-wall-title">Skills & Specializations</h4>
           <div class="skills-wall">
-            <button class="skill-sticker" onclick="showToast('Prototyping: Interactive wireframes & flow animations'); playPop();">⚡ Prototyping</button>
-            <button class="skill-sticker" onclick="showToast('Visual Designing: Aesthetics, typography & color hierarchy'); playPop();">🎨 Visual Designing</button>
-            <button class="skill-sticker" onclick="showToast('UX Design: User research, wireframing & journey mapping'); playPop();">🧠 UX Design</button>
-            <button class="skill-sticker" onclick="showToast('HTML: Semantic markup & accessible structure'); playPop();">🌐 HTML</button>
-            <button class="skill-sticker" onclick="showToast('CSS: Modern styling, flexbox/grid & animations'); playPop();">💅 CSS</button>
-            <button class="skill-sticker" onclick="showToast('JavaScript: Interactive UI logic & DOM manipulation'); playPop();">⚡ JavaScript</button>
+            <button class="skill-sticker" onclick="showToast('Prototyping: Interactive wireframes &amp; flow animations'); playPop();">&#x26A1; Prototyping</button>
+              <button class="skill-sticker" onclick="showToast('Visual Designing: Aesthetics, typography & color hierarchy'); playPop();">&#x1F3A8; Visual Designing</button>
+              <button class="skill-sticker" onclick="showToast('UX Design: User research, wireframing & journey mapping'); playPop();">&#x1F9E0; UX Design</button>
+              <button class="skill-sticker" onclick="showToast('HTML: Semantic markup & accessible structure'); playPop();">&#x1F4C4; HTML</button>
+              <button class="skill-sticker" onclick="showToast('CSS: Modern styling, flexbox/grid & animations'); playPop();">&#x1F58C; CSS</button>
+            <button class="skill-sticker" onclick="showToast('JavaScript: Interactive UI logic &amp; DOM manipulation'); playPop();">&#x26A1; JavaScript</button>
           </div>
 
         </div>
@@ -381,7 +436,7 @@
     <div class="container">
       
       <div class="section-header-badge">
-        <span class="tape-title">CREATIVE LAB 🧪</span>
+          <span class="tape-title">CREATIVE LAB &#x1F9EA;</span>
         <h2 class="section-main-title">The Interactive Sandbox</h2>
         <p class="section-subtitle">A place to play with tactile digital toys, pixel grids, and stickers.</p>
       </div>
@@ -392,22 +447,22 @@
         <div class="toy-card">
           <div class="toy-header">
             <h3 class="toy-title">
-              <span>📌 Sticker Board</span>
+              <span>&#x1F3A8; Sticker Board</span>
             </h3>
             <span class="toy-badge">Drag & Drop</span>
           </div>
 
           <div class="sticker-board-area" id="stickerBoard">
-            <div class="sticker-board-hint">Click a sticker below to stamp it here! ✨</div>
+            <div class="sticker-board-hint">Click a sticker below to stamp it here! &#x2728;</div>
           </div>
 
           <div class="sticker-palette-tray">
-            <button class="tray-sticker" data-emoji="🌸" title="Flower Sticker">🌸</button>
-            <button class="tray-sticker" data-emoji="🎯" title="Bullseye Sticker">🎯</button>
-            <button class="tray-sticker" data-emoji="☕" title="Coffee Mug">☕</button>
-            <button class="tray-sticker" data-emoji="⚡" title="Lightning Bolt">⚡</button>
-            <button class="tray-sticker" data-emoji="❤️" title="Pixel Heart">❤️</button>
-            <button class="tray-sticker" data-emoji="⭐" title="Chicago Star">⭐</button>
+              <button class="tray-sticker" data-emoji="flower" title="Flower Sticker">&#x1F33C;</button>
+              <button class="tray-sticker" data-emoji="target" title="Bullseye Sticker">&#x1F3AF;</button>
+            <button class="tray-sticker" data-emoji="coffee" title="Coffee Mug">&#x2615;</button>
+            <button class="tray-sticker" data-emoji="lightning" title="Lightning Bolt">&#x26A1;</button>
+            <button class="tray-sticker" data-emoji="heart" title="Heart">&#x2764;&#xFE0F;</button>
+            <button class="tray-sticker" data-emoji="star" title="Star">&#x2B50;</button>
           </div>
 
           <div class="toy-actions" style="margin-top: 14px;">
@@ -419,7 +474,7 @@
         <div class="toy-card">
           <div class="toy-header">
             <h3 class="toy-title">
-              <span>👾 12×12 Pixel Studio</span>
+              <span>&#x1F3A8; 12A-12 Pixel Studio</span>
             </h3>
             <span class="toy-badge">Exportable</span>
           </div>
@@ -441,7 +496,7 @@
 
           <div class="toy-actions">
             <button class="btn-secondary" id="clearPixelBtn">Clear Grid</button>
-            <button class="btn-secondary" id="savePixelBtn" style="background-color: #111; color: #FFF;">Download PNG 📥</button>
+              <button class="btn-secondary" id="savePixelBtn" style="background-color: #111; color: #FFF;">Download PNG &#x1F4BE;</button>
           </div>
         </div>
 
@@ -457,7 +512,7 @@
     <div class="container">
       
       <div class="section-header-badge">
-        <span class="tape-title">LET’S BUILD TOGETHER 📬</span>
+          <span class="tape-title">LET&#x2019;S BUILD TOGETHER &#x1F4AC;</span>
         <h2 class="section-main-title">Get in Touch</h2>
         <p class="section-subtitle">Open to staff product design roles, advisory, and ambitious freelance challenges.</p>
       </div>
@@ -491,19 +546,19 @@
           <div class="contact-action-row">
             <div style="display: flex; gap: 10px; flex-wrap: wrap;">
               <button type="button" class="btn-copy-email" id="copyEmailBtn" title="Copy abhijithblal4@gmail.com">
-                <span>📋</span>
+              <span>&#x1F4CB;</span>
                 <span>Copy Direct Email</span>
               </button>
 
               <a href="https://wa.me/918078380042" target="_blank" rel="noopener noreferrer" class="btn-whatsapp-direct" title="Chat directly on WhatsApp (+91 8078380042)">
-                <span>💬</span>
+              <span>&#x1F4AC;</span>
                 <span>WhatsApp: +91 8078380042</span>
               </a>
             </div>
 
             <button type="submit" class="btn-submit-contact" title="Direct message to Abhijith's WhatsApp">
-              <span>Send via WhatsApp 💬</span>
-              <span>↗</span>
+              <span>Send via WhatsApp &#x1F4AC;</span>
+              <span><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;margin-left:4px;"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></span>
             </button>
           </div>
         </form>
@@ -532,8 +587,8 @@
           <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24h-.18zm-3.56 3.63c-.2 0-.43.08-.66.33-.23.25-.87.85-.87 2.07s.89 2.4 1.02 2.57c.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.53.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.2-.58.2-1.07.14-1.18-.06-.1-.23-.17-.48-.29-.26-.13-1.47-.73-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.65.81-.8 1-.14.16-.29.18-.54.06-.26-.13-1.08-.4-2.06-1.27-.76-.68-1.28-1.52-1.43-1.77-.14-.26-.02-.39.11-.52.11-.11.26-.29.39-.44.13-.15.17-.25.26-.42.08-.17.04-.32-.02-.45s-.56-1.35-.77-1.85c-.2-.48-.41-.42-.56-.42h-.32z"/></svg>
         </a>
       </div>
-      <div class="footer-doodle">Designed & hand-crafted with purpose &bull; Kerala, India 🌴</div>
-      <div class="footer-copyright">&copy; 2026 Abhijith S Lal. Designing digital experiences that feel effortless and look unforgettable.</div>
+      <div class="footer-doodle">&#x1F577;&#xFE0F; WITH GREAT DESIGN COMES GREAT RESPONSIBILITY &#x1F577;&#xFE0F;</div>
+      <div class="footer-copyright">&copy; 2026 Abhijith S Lal &mdash; UI/UX Designer &bull; Kerala, India</div>
     </div>
   </footer>
 
@@ -542,7 +597,7 @@
        ========================================================================= -->
   <div class="modal-overlay" id="caseStudyModal">
     <div class="modal-content-box">
-      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">✕</button>
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">&#x2715;</button>
       <div id="modalBody">
         <!-- Injected via JavaScript on card click -->
       </div>
@@ -559,3 +614,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+

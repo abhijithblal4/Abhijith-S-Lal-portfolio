@@ -703,16 +703,16 @@ document.addEventListener('DOMContentLoaded', () => {
       const tiltX = (y / rect.height) * -6;
       const tiltY = (x / rect.width) * 6;
 
-      const robinBox = document.querySelector('.robin-sketch-box');
-      if (robinBox) {
-        robinBox.style.transform = `perspective(600px) rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
+      const nametagCard = document.querySelector('.spidey-nametag-card') || document.querySelector('.robin-sketch-box');
+      if (nametagCard) {
+        nametagCard.style.transform = `perspective(600px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) rotate(-1.5deg)`;
       }
     });
 
     heroWrapper.addEventListener('mouseleave', () => {
-      const robinBox = document.querySelector('.robin-sketch-box');
-      if (robinBox) {
-        robinBox.style.transform = 'perspective(600px) rotateX(0deg) rotateY(0deg)';
+      const nametagCard = document.querySelector('.spidey-nametag-card') || document.querySelector('.robin-sketch-box');
+      if (nametagCard) {
+        nametagCard.style.transform = 'perspective(600px) rotateX(0deg) rotateY(0deg) rotate(-1.5deg)';
       }
     });
   }
