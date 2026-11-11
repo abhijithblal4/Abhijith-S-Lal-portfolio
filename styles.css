@@ -861,6 +861,105 @@ body {
 .bg-code { background: var(--mint); color: #111111; }
 .bg-ux { background: var(--magenta); color: #FFFFFF; }
 
+/* Skills Section Sub-Headers & Dividers */
+.skills-group-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  border-bottom: 2px solid var(--text-main);
+  padding-bottom: 8px;
+}
+
+.skills-sub-title {
+  font-size: 13px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--text-main);
+}
+
+.skills-pill-count {
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--text-light);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.skills-divider {
+  height: 1px;
+  background-color: var(--border-light);
+  margin: 32px 0;
+}
+
+/* 2-Column Grid for UX and UI Disciplines */
+.skills-disciplines-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+}
+
+@media (max-width: 768px) {
+  .skills-disciplines-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+.editorial-skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.skill-pill-item {
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-main);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  user-select: none;
+}
+
+.skill-pill-item:hover {
+  background-color: #FFFFFF;
+  border-color: var(--text-main);
+  transform: translateX(4px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+.skill-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.dot-magenta {
+  background-color: var(--magenta);
+  box-shadow: 0 0 8px rgba(227, 28, 100, 0.45);
+}
+
+.dot-mint {
+  background-color: var(--mint);
+  box-shadow: 0 0 8px rgba(104, 191, 160, 0.45);
+}
+
+.skill-name {
+  letter-spacing: 0.3px;
+}
+
 /* Kerala Time Widget */
 .chicago-widget-card {
   margin-top: 24px;
